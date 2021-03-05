@@ -1,6 +1,6 @@
 package io.celeri.dma.choice
 
-open abstract class Choice(
+abstract class Choice(
         val label: String,
         val children: List<StandardChoice>) {
 

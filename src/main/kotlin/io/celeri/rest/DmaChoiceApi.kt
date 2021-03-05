@@ -2,16 +2,13 @@ package io.celeri.rest
 
 import io.celeri.dma.choice.StaticChoices
 import io.celeri.dma.dto.ChoiceDto
-import io.celeri.dma.dto.ChoiceSpecsDto
 import io.celeri.dma.dto.ChoicesDto
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 import java.util.*
 
 @RestController
 @RequestMapping("/dma/choices")
+@CrossOrigin
 class DmaChoiceApi {
 
     @GetMapping("/creation-choices")
@@ -24,10 +21,19 @@ class DmaChoiceApi {
     }
 
     @PostMapping("/children-of")
-    fun choicesOf(choiceSpecs: ChoiceSpecsDto): ChoicesDto {
+    fun choicesOf(selections: ChoicesDto): ChoicesDto {
         return ChoicesDto(
                 StaticChoices(Collections.emptyList())
-                        .childrenOf(choiceSpecs.labels)
+                        .childrenOf(selections.choices.map { it.label })
+                        .map { ChoiceDto(it.label) }
+                        .toList())
+    }
+
+    @PostMapping("/properties-of")
+    fun propertiesOf(selections: ChoicesDto): ChoicesDto {
+        return ChoicesDto(
+                StaticChoices(Collections.emptyList())
+                        .childrenOf(selections.choices.map { it.label })
                         .map { ChoiceDto(it.label) }
                         .toList())
     }

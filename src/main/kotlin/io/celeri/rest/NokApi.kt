@@ -3,14 +3,12 @@ package io.celeri.rest
 import io.celeri.nok.DefibrillationDto
 import io.celeri.nok.NotificationDto
 import io.celeri.nok.ReportDto
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 import java.util.*
 
 @RestController
 @RequestMapping("/nok")
+@CrossOrigin
 class NokApi {
 
     @GetMapping("/report")
