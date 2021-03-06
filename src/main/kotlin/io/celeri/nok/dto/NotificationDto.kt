@@ -1,4 +1,4 @@
-package io.celeri.nok
+package io.celeri.nok.dto
 
 data class NotificationDto(
         val target: String,

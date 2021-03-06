@@ -12,29 +12,48 @@ import java.util.*
 class DmaChoiceApi {
 
     @GetMapping("/creation-choices")
-    fun choices(): ChoicesDto {
-        return ChoicesDto(
-                StaticChoices(Collections.emptyList())
-                        .creationChoices()
-                        .map { ChoiceDto(it.label) }
-                        .toList())
+    fun creations(): ChoicesDto {
+//        return ChoicesDto(
+//                StaticChoices(Collections.emptyList())
+//                        .creationChoices()
+//                        .map { ChoiceDto(it.label) }
+//                        .toList())
+        println("CALLED " + "creations")
+        return ChoicesDto(listOf(
+                ChoiceDto("creation1"),
+                ChoiceDto("creation2"),
+                ChoiceDto("creation3")
+        ))
     }
 
     @PostMapping("/children-of")
-    fun choicesOf(selections: ChoicesDto): ChoicesDto {
-        return ChoicesDto(
-                StaticChoices(Collections.emptyList())
-                        .childrenOf(selections.choices.map { it.label })
-                        .map { ChoiceDto(it.label) }
-                        .toList())
+    fun childrenOf(@RequestBody selections: ChoicesDto): ChoicesDto {
+        // TODO error handling, null checks on dto, or something
+//        return ChoicesDto(
+//                StaticChoices(Collections.emptyList())
+//                        .childrenOf(selections.choices.map { it.label })
+//                        .map { ChoiceDto(it.label) }
+//                        .toList())
+        println("CALLED " + "childrenOf")
+        return ChoicesDto(listOf(
+                ChoiceDto("child1"),
+                ChoiceDto("child2"),
+                ChoiceDto("child3")
+        ))
     }
 
     @PostMapping("/properties-of")
-    fun propertiesOf(selections: ChoicesDto): ChoicesDto {
-        return ChoicesDto(
-                StaticChoices(Collections.emptyList())
-                        .childrenOf(selections.choices.map { it.label })
-                        .map { ChoiceDto(it.label) }
-                        .toList())
+    fun propertiesOf(@RequestBody selections: ChoicesDto): ChoicesDto {
+//        return ChoicesDto(
+//                StaticChoices(Collections.emptyList())
+//                        .childrenOf(selections.choices.map { it.label })
+//                        .map { ChoiceDto(it.label) }
+//                        .toList())
+        println("CALLED " + "propertiesOf")
+        return ChoicesDto(listOf(
+                ChoiceDto("property1"),
+                ChoiceDto("property2"),
+                ChoiceDto("property3")
+        ))
     }
 }
