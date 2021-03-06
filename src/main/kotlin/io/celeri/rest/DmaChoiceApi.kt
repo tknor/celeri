@@ -1,10 +1,8 @@
 package io.celeri.rest
 
-import io.celeri.dma.choice.StaticChoices
 import io.celeri.dma.dto.ChoiceDto
 import io.celeri.dma.dto.ChoicesDto
 import org.springframework.web.bind.annotation.*
-import java.util.*
 
 @RestController
 @RequestMapping("/dma/choices")

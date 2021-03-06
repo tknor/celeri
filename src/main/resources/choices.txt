@@ -1,0 +1,1566 @@
+
+*Character : Special Character : Race : Profession : Alignment : Character Trait : Clothes : Equipment : Skill : Secret : Jewelry
+	
+*Encounter : PC Reward : PC Threat : Location : Daytime : Surface / Terrain / Set : Weather : Encounter Feature : Sense
+
+*Plot : PC Reward : PC Threat : NPC Reward : NPC Threat
+
+Encounter Feature
+	Time Pressure
+
+Alignment
+	Lawful Good
+	Neutral Good
+	Chaotic Good
+	Lawful Neutral
+	True Neutral
+	Chaotic Neutral
+	Lawful Evil
+	Neutral Evil
+	Chaotic Evil
+
+Race
+	Common Race > Common Race
+	Monster
+		Demon
+		Ghost
+		Humanoid
+		Mutant
+		Undead
+	Animal
+		Dog
+		Cat
+		Bear
+
+Common Race
+	Dwarf
+	Elf
+	Gnome
+	Half-Elf
+	Half-Orc
+	Halfling
+	Human
+
+Special Character
+	Nature
+	Sentient Artifact
+	Intelligent Animal : Race
+	God : Race
+	
+Saving Throw
+	Fortitude
+	Reflex
+	Will
+	
+Ability
+	Strength / Stamina
+	Dexterity / Agility
+	Constitution
+	Intelligence
+	Wisdom / Perception
+	Charisma
+
+Liquid
+	Acid
+	Blood
+	Lava
+	Mud
+	Oil
+	Poison
+	Sand
+	Water
+	
+Art
+	Carpet
+	Chalice
+	Comb With Stones : Gemstone
+	Dice
+	Embroided Cloth
+	Embroided Clothes
+	Engraved Weapon : Melee Weapon : Ranged Weapon
+	Figurine
+	Mask
+	Painting
+	Statuette
+	
+Jewelry
+	Amulet : Gemstone
+	Bracelet : Gemstone
+	Crown : Gemstone
+	Pendant : Gemstone
+	Ring : Gemstone
+	
+Clothing
+	Belt
+	Boots
+	Cloak
+	Coat
+	Girdle
+	Gloves
+	Hat
+	Jacket
+	Robe
+	Sandals
+	Shoes
+	Vest
+	
+Location
+	*Room
+		Arena
+		Fighting Pit
+		Armory
+		Audience Chamber
+		Burial Site
+		Cellar
+		Chapel
+		Dumping Grounds
+		Forge
+		Guard Post
+		Hall
+		Jail
+		Kitchen
+		Larder
+		Library
+		Meeting Room
+		Museum
+		Nursery
+		Quarters
+		Smelting Furnace
+		Storage
+		Study
+		Temple
+		Torture Room
+		Throne Room
+		Training Area
+		Treasury
+		Water Supply
+		Workshop : Profession
+	*Fortification
+		Castle
+		Fortress
+		Gate
+		Keep
+		Tower
+		Wall
+	*Building
+		Arena
+		Bell Tower
+		Brothel
+		Church
+		House
+		Mage Tower
+		Merchant
+		Orphanage
+		Palace
+		Prison
+		Tavern
+		Temple
+		Townhall
+		Warehouse
+		Watch Tower
+		Workshop : Profession
+		Windmill
+		Watermill
+	*Cartographic
+		City
+		Country
+		Land
+		Settlement
+		Town
+		Village
+		Farm
+		Farmland
+	*Structure
+		Boat
+		Bridge : Bridge
+		Catacombs
+		Dungeon
+		Gate
+		Graveyard
+		Orchard
+		Ruin
+		Field
+		Sewers
+		Campfire
+		Fountain
+		Grave
+		Monument
+		Underground Mine
+		Surface Mine
+		Obelisk
+		Pool
+		Statue
+		Shed
+		Tomb
+		Vinyard
+		Wall
+	*Natural Structure
+		Canyon
+		Cave
+		Chasm
+		Cliff
+		Crater
+		Desert
+		Field
+		Glacier
+		Hill
+		Island
+		Jungle
+		Lake
+		Meadow
+		Mesa / Plateau
+		Mountain
+		Mountain Pass
+		Mountain Peak
+		Oasis
+		Plain
+		Ravine / Gorge
+		River
+		Snow Cave
+		Stream
+		Swamp
+		Volcano
+		Waterfall
+
+Feature
+	Magical
+		power released by external
+		power released in bloodline
+		polymorph by external
+	*Width
+		Narrow
+		Wide
+	Material
+		Adamantite
+		Bone
+		Bronze
+		Dwarven Bronze
+		Electrum
+		Elven Steel
+		Flesh
+		Gold
+		Iron
+		Ivory
+		Mithril
+		Platinum
+		Silver
+		Steel
+		Stone
+		Wood
+	Damage
+		Bruises
+		Broken
+		Shattered
+		Burned
+		Scorched
+		Pristine
+		Untouched
+		Ragged
+	*Cleanliness
+		Dirty
+		Clean
+		Washed
+		Slime Covered
+		Liquid Covered
+		Dust Covered
+	Color
+		*Special
+			Colorless
+			Transparent
+			Opaque
+		*Standard
+			Black
+			Blue
+				Sky Blue
+				Sea Blue
+			Brown
+			Green
+				Deep Sea Green
+			Gray
+				Anthracit Gray
+				Cloud Gray
+				Steel Gray
+			Orange
+			Red
+				Sunrise Red
+			Violet
+			White
+				Snow White
+			Yellow
+	Sturdiness
+		Indestructible
+		Sturdy
+		Weak
+	State
+		Burning
+		Wet
+	Character State
+		Anxiety
+		Concussion
+		Confusion
+		Dizziness
+		Fear
+		Nausea
+		Panic
+		Paralysis
+		Vomitting
+		Dying
+		Wounded
+		Burning
+		Invigorated
+		Shiverring with Cold
+		Foam at Mouth
+	Embroided
+	Engraved
+	Ordinary
+	Place
+		Untidy
+		Messy
+		Dusty
+		Warm
+		Cold
+		Decorated with Art
+		Decorated with Flowers
+		with Served Food
+		Infested with Insects
+		Infested with Vermin
+	
+Furniture
+	*Entrance
+		Barred Door
+		Concealed Door
+		False Door
+		Locked Door
+		Reinforced Door
+		Secret Door
+		Stuck Door
+		Door with bottom window
+		Bar Portcullis
+		Hash Portcullis
+	*Interior
+		Carpet
+		Embroided Cloth
+		Statue
+		Painting
+		Skull
+		Alembics
+		Alcove / Niche
+		Altar
+		Animal Taxidermy
+		Armor Stand
+		Arrow Slit
+		Balcony
+		Barrel
+		Bed
+		Bench
+		Bookcase
+		Bookshelf
+		Brazier
+		Bucket
+		Bunk Bed
+		Cabinet
+		Cage
+		Caldron
+		Grate
+		Sarcophagus
+		Candles
+		Carpet
+		Catwalk
+		Cave-in
+		Chair
+		Chandelier
+		Chasm
+		Chest
+		Closet
+		Collapsed Wall
+		Crate
+		Crevice
+		Curtain
+		Evil Symbol
+		Fallen Stones
+		Fallen Masonry
+		Fire Pit
+		Fireplace
+		Fire Wood
+		Floor Fur
+		Flowers
+		Forge
+		Fountain
+		Gong
+		Hole
+		Idol
+		Ladder
+		Loose Masonry
+		Manacles
+		Mirror
+		Mosaic
+		Murder Hole
+		Oven
+		Painting
+		Pedestal
+		Peephole
+		Phosporescent Fungi
+		Pillar
+		Platform
+		Pool
+		Rope
+		Sacrifice Table
+		Sconce
+		Shaft
+		Shelf
+		Shrine
+		Spider Webs
+		Stairs
+		Statue
+		Stool
+		Table
+		Tapestry
+		Throne
+		Torch
+		Torture Device
+		Trash
+		Tub
+		Wardrobe
+		Washbasin
+		Weapon Rack
+		Well
+		Workbench
+		Lantern
+
+Other Equipment
+	Common
+		Bracers
+		Backpack
+		Blanket
+		Bottle
+		Candle
+		Chalk
+		Fishing Net
+		Fishing Rod & Hook
+		Flask
+		Flint & Steel
+		Grappling Hook
+		Holy Symbol
+		Holy Water Flask
+		Hourglass
+		Ladder
+		Lantern
+		Lock
+		Lockpick
+		Magnifying Glass
+		Map
+		Mirror
+		Musical Instrument
+		Oil Flask
+		Paper
+		Papyrus
+		Parchment
+		Perfume
+		Pot
+		Quill Pen & Ink
+		Quiver
+		Rope
+		Sack
+		Scroll Case
+		Spyglass
+		Tent
+		Torch
+		Oil
+		Whistle
+	Horse
+	Uncommon
+		Poison Flask
+		Potion : Spell
+		Spell Scroll : Spell
+		Staff : Spell
+		Wand : Spell
+		Spellbook
+		Ring : Spell
+
+Equipment : Helmet : Armor : Shield : Melee Weapon : Ranged Weapon : Clothing : Other Equipment
+
+Armor
+	Leather Armor (1)
+	Padded Leather Armor (2)
+	Gambeson (2)
+	Studded Leather Armor (3)
+	Brigandine (3)
+	Ring mail (3)
+	Chain Mail (4)
+	Hauberk (4)
+	Splint Mail (4)
+	Scale Mail (5)
+	Plate Armor (5)
+	Banded Mail (6)
+	Full Plate Armor (7)
+	
+Shield
+	Wooden Buckler
+	Small Wooden Shield
+	Large Wooden Shield
+	Metal Buckler
+	Small Metal Shield
+	Large Metal Shield
+		
+Helmet
+	Leather Cap (0)
+	Padded Leather Cap (0)
+	Metal Helmet (1)
+	Full Metal Helmet (1)
+	
+Clothes
+	Adventurer
+	Common
+	Flamboyant
+	Formal
+	Guard
+	Hooded
+	Noble
+	Outlandish
+	Soldier
+	Traveller
+
+Melee Weapon
+	Axe (1d6+1)
+	Bastard Sword 1H (1d8)
+	Bastard Sword 2H (2d4)
+	Battle Axe (1d10)
+	Broad Sword (2d4)
+	Club (1d4)
+	Dagger (1d4)
+	Flail (1d6+1)
+	Halberd (1d10)
+	Heavy Lance (1d10+1)
+	Knife (1d3)
+	Light Lance (1d8+1)
+	Long Sword (1d8)
+	Mace (1d6+1)
+	Maul (1d10)
+	Morning Star (2d4)
+	Pick (1d4+1)
+	Pike (1d8+1)
+	Quarterstaff (1d6)
+	Scimitar (1d8)
+	Short Sword (1d6)
+	Sickle (1d4+1)
+	Sling (1d4+1)
+	Spear (1d6+1)
+	Trident (1d6+1)
+	Two-handed Sword (1d10)
+	Warhammer (1d6+1)
+	Whip (1d4)
+
+Ranged Weapon
+	Blowgun (1d2)
+	Composite Long Bow (1d8)
+	Composite Short Bow (1d6)
+	Hand Crossbow (1d4)
+	Heavy Crossbow (1d8)
+	Javelin (1d6)
+	Light Crossbow (1d6)
+	Long Bow (1d8)
+	Short Bow (1d6)
+	Throwing Axe (1d6)
+	Throwing Dagger (1d4)
+	Throwing Dart (1d3)
+	Throwing Spear (1d6)
+	Munition
+		Arrow
+		Bolt
+		Bullet
+		Dart
+		
+Profession
+	Adventurer
+		Bard
+		Cleric
+		Druid
+		Fighter
+		Mage
+		Priest
+		Rogue
+		Sorcerer
+		Thief
+		Warrior
+		Wizard
+	*Artist
+		Acrobat
+		Actor
+		Dancer
+		Musician
+		Jester
+		Juggler
+		Minstrel
+		Painter
+		Playwright
+		Sculpturer
+		Singer
+		Storyteller
+		Tightrope Walker
+		Ventriloquist
+	*White Collar Craft
+		Alchemist
+		Appraiser
+		Architect
+		Astrologer
+		Astronomer
+		Cartographer
+		Cleric
+		Engineer
+		Gem Cutter
+		Healer
+		Jeweler
+		Librarian
+		Moneylender
+		Navigator
+		Physician
+		Priest
+		Scholar
+		Scribe
+	*Blue Collar Craft
+		Animal Handler
+		Animal Trainer
+		Armorer
+		Baker
+		Barber
+		Blacksmith
+		Bookbinder
+		Bowyer
+		Brewer
+		Bricklayer
+		Butcher
+		Candlemaker
+		Carpenter
+		Charioteer
+		Clothier
+		Cobbler
+		Cook
+		Cutler
+		Dyer
+		Engraver
+		Farmer
+		Fisherman
+		Fletcher
+		Forester
+		Furrier
+		Gardener
+		Glassblower
+		Gravedigger
+		Groom
+		Herbalist
+		Hunter
+		Leatherworker
+		Locksmith
+		Mason
+		Merchant
+		Miller
+		Miner
+		Minter
+		Painter
+		Papermaker
+		Potter
+		Quarrier
+		Rat-Catcher
+		Saddler
+		Seamstress
+		Shipwright
+		Shoemaker
+		Stonecarver
+		Stonemason
+		Tailor
+		Teamster / Freighter
+		Trader / Barterer
+		Trapper
+		WeaponsmiObject
+		Weaver
+		Wheelwright
+		Woodcarver
+		Woodworker
+	*Noble
+		Lord
+		Knight / Sir
+		Baron
+		Baroness
+		Duke
+		Duchess
+		Prince
+		Princess
+		King
+		Queen
+		Emperor
+		Empress
+	*Other Illegal Profession
+		Assassin
+		Bandit
+		Beggar
+		Forger
+		Gambler
+		Robber
+		Thief
+	*Other Legal Profession
+		Advisor
+		Bodyguard
+		Bouncer
+		Diplomat
+		Executioner
+		Farmer
+		Fortune-Teller
+		Guard
+			Captain
+			Guard
+		Herald
+		Hunter
+		Innkeeper
+		Interpreter
+		Judge
+		Knight
+		Laborer
+		Mage
+		Mercenary
+		Merchant
+		Messenger
+		Peddler
+		Politician
+		Sailor
+		Serf
+		Servant
+		Shepherd
+		Soldier
+			Soldier
+			Captain
+			General
+		Spy
+		Steward
+		Tax Collector
+		Warden
+	Unemployed
+	
+Skill
+	Backstab
+	Blind-Fight
+	Bomb-Making
+	Climb
+	Direction Sense
+	Disguise
+	Endure
+	Etiquette
+	Fire-Building
+	Forging
+	Gambling
+	Hide
+	Jump
+	Knowledge, Arcane
+	Knowledge, History
+	Languages, Ancient
+	Languages, Modern
+	Lips Reading
+	Listen
+	Lockpicking
+	Mountaineering
+	Poison-Making
+	Potion-Making
+	Read / Write
+	Riding, Airborne
+	Riding, Land
+	Rope Use
+	Run
+	Sailing
+	Scroll-Writing
+	Seamanship
+	Silent Move
+	Spellcraft
+	Spot
+	Survive
+	Swim
+	Tactics / Strategy
+	Tame Animal
+	Thieves' Cant
+	Track
+	Traps
+	Truth Sense
+	Weather Sense
+
+Surface / Terrain / Set
+	Angled
+	Blood
+		Ankle Deep Blood
+		Knee Deep Blood
+		Waist Deep Blood
+	Bog
+	Bridge : Bridge
+	Clay
+	Dirt
+	Falling Danger
+		Cliff
+		Hole
+		Liquid
+	Forest
+		Light Forest
+		Heavy Forest
+		Massive Trees
+	Frozen Snow
+	Grass
+	Gravel
+	Heavy Brush
+	High Grass
+	Ice
+	Jungle
+	Marble
+	Moor
+	Mossed Stone
+	Mud
+		Ankle Deep Mud
+		Knee Deep Mud
+		Waist Deep Mud
+	Oil
+		Ankle Deep Oil
+		Knee Deep Oil
+		Waist Deep Oil
+	Pebbles
+	Road
+		Dirt Trail
+		Forest Trail
+		Mud Trail
+		Paved Road
+		Rock Trail
+	Rocks
+	Sand
+	Slippery
+		Liquid
+	Snow
+		Ankle Deep Snow
+		Knee Deep Snow
+		Waist Deep Snow
+	Steep
+	Stone
+	Stream
+	Submerged In Water
+	Swamp / Marsh
+	Tiles
+	Trail
+	Undergrowth
+		Light Undergrowth
+		Heavy Undergrowth
+	Water
+		Ankle Deep Water
+		Knee Deep Water
+		Waist Deep Water
+
+Bridge
+	Drawbridge
+	Log
+	Plank
+	Rope Bridge
+	Wood Bridge
+	Stone Bridge
+
+Sense
+	Vision
+		Lighting
+			Blinding Light
+			Blinding Sunlight
+			Candles
+			Darkness
+			Dim Light
+			Fluorescent
+			Glowing Stone
+			Moonlight
+			Starlight
+			Sunlight
+			Torches
+		Rising dust
+	Hearing
+		March
+		Singing
+		Playing instrument
+		Horse run with different haste, with wagon
+		Armor sounds
+		Building sound
+		Natural structure
+			Waterfall, Lake, etc
+		Walk on different surfaces
+		Celebration
+		Machine
+		Torture
+		Laugh
+		Scream
+	Smell
+		Carcass
+		Fish
+		Smoke
+		Tabacco smoke
+		Pipe weed
+		Humid
+		Difficult
+		Ash
+		Cold Air
+		Hot Air
+		Burning Air
+		Burnt, Meat
+		Burnt, Wood
+		Candles
+		Cold Air
+		Cooked, Soup
+		Damp
+		Dust
+		Flowers
+		Forest
+		Fresh Air
+		Fruits
+		Grass
+		Grilled Meat
+		Metallic
+		Moldy
+		Odorless
+		Perfume
+		Rotten, Eggs
+		Rotten, Meat
+		Rotten, Plants
+		Smoke
+		Spices
+		Sulphur
+		Sweat
+		Sweet
+		Vegetables
+	Touch
+		Temperature
+			Chilling
+			Freezing
+			Hot
+		Air Flow
+	
+Weather
+	Clear
+	Cloudy
+	Fog
+		Light Fog
+		Heavy Fog
+	Mist
+	Rain
+		Light Rain
+		Heavy Rain
+	Scorching Sun
+	Snowing
+	Storm
+		Blizzard
+		Dust Storm
+		Rain Storm
+		Sand Storm
+	Wind
+		Light Wind
+		Strong Wind
+	Ash
+
+Daytime
+	Dawn
+	Morning
+	Noon
+	Afternoon
+	Dusk
+	Evening
+	Night
+	Midnight
+	Eclipse
+	
+Spell
+	Generic
+		Alteration
+			Pyrokinesis
+			Cryokinesis
+			Telekinesis
+			Transformation
+		Conjuration
+			Animal
+			Demon
+			Object
+			Spirit
+		Destruction
+			Acid Spray
+			Acid Spit
+			Fire Touch
+			Flames
+			Fireball
+			Fire Wall
+			Cold Touch
+			Frost Spike
+			Freezing Mist
+			Freezing Spray
+			Shock
+			Lightning Bolt
+			Lightning Trap
+		Divination
+		Enchantment
+		Illusion
+			Blur
+			Invisibility
+		Necromancy
+			Raise Undead
+		Restoration
+			Heal
+			Cure Disease / Illness
+			Lift Curse
+			Raise Dead
+		Stats Increase : Statistic
+		Stats Decrease : Statistic
+		Stats Recovery : Statistic
+		Teleportation
+
+Physical Threat
+	Burn, Acid
+	Burn, Electric
+	Burn, Fire
+	Burn, Frost
+	Crushing
+	Drowning
+	Fall
+	Poison
+	Strangulation
+	Suffocation
+	Venom
+	Wound, Blunt
+	Wound, Piercing
+	Wound, Slash
+	
+Trap Mechanism
+	Detector switched
+	Floor switched
+	String switched
+	Touch switched
+		
+Trap
+	Bear Trap
+	Breaking Bridge : Trap Mechanism
+		Height
+		Liquid : Liquid
+		Spikes
+	Cave-in
+	Closing Door
+	Contact
+		Fire Burn
+		Cold Burn
+		Shock
+		Poison Layer
+	Containment Room
+		Air Tight
+		Poison Mist
+		Liquid Filling : Liquid
+	Crusher
+	Deadfall
+		Boulder, Falling
+		Boulder(s), Rolling
+		Falling Stone
+		Log(s), Rolling
+		Log, Direct Sway
+		Log, Sideway Sway
+		Log, Spiked
+	Ejector
+		Acid
+		Flames
+		Freezing Spray
+		Poison Spray
+		Spears
+		Spikes
+	Falling Gate
+	Falling Net
+	Falling Portcullis
+	Glue
+	Missile
+		Bolt
+		Bolt, Venomous
+		Cannon Ball
+		Fireball
+		Frost Spike
+		Lightning Bolt
+		Spear
+		Stone Sphere
+	Monster Releaser
+	Monster Summoner
+	Pit, Uncovered
+		Height
+		Liquid : Liquid
+		Spikes
+	Pit, Covered
+		Height
+		Liquid : Liquid
+		Spikes
+	Pouring Liquid : Liquid
+	Snare
+		Anchored / Cutting
+		Pulling
+	Spectral Tendrils
+	Strangling Vine
+	Trap Door, Opened
+		Height
+		Liquid : Liquid
+		Spikes
+	Trap Door, Locking
+		Height
+		Liquid : Liquid
+		Spikes
+	Travelling Blade
+	Travelling String
+		
+Character Trait : Character Age : Character Attitude : Character Face : Character Hair : Character Height : Character Weight : Character Speech : Character Mannerism : Character Miscelaneous Trait
+
+Character Age
+	CZ
+		Dospělý
+		Dítě
+		Mladý
+		Náctiletý
+		Plný mládí
+		Postarší
+		Prastarý
+		Pravěký
+		Starý
+		Střední věk
+		Unavený věkem
+		V nejlepších letech
+	EN
+		Ancient
+		Child
+		Decrepit / Worn Out
+		Elderly
+		Mature
+		Middle-Aged
+		Old
+		Patriarchal
+		Teen-Aged
+		Venerable
+		Young
+		Youthful
+
+Character Height
+	CZ
+		Drobný
+		Gigantický
+		Neohrabaně vysoký
+		Nízký
+		Obrovský
+		Trpaslík
+		Vysoký
+	EN
+		Gigantic
+		Hulking (Clumsy)
+		Short
+		Tall
+		Tiny
+
+Character Weight
+	CZ
+		Hubený
+		Jako strašák
+		Kost-a-kůže
+		Obézní
+		Plno-štíhlý
+		Svalnatý
+		Tlustý
+		Vychrtlý
+		Vypasený
+		Vyzáblý
+		Široká ramena
+		Štíhlý
+	EN
+		Gaunt
+		Broad-Shouldered
+		Muscular
+		Obese
+		Pot-Bellied
+		Scarecrow
+		Skinny
+		Slim
+		Thin
+		Plump
+		Rotund
+		Slender
+		Stout
+		Trim
+		Fat
+
+Character Hair
+	Bald
+	Braided
+	Cropped
+	Curly
+	Frazzled
+	Greasy
+	Grizzled
+	Hair Color
+	Leonine
+	Limp
+	Salt-and-pepper
+	Sparse
+	Straight
+	Thick
+	Thin
+	Wavy
+	Widow's peaked
+	Wiry
+
+Character Speech
+	Accented
+	Breathless
+	Crisp
+	Fast
+	Guttural
+	High Pitched
+	Lisp
+	Loud
+	Low Pitched
+	Nasal
+	Quiet
+	Slow
+	Slurs Words
+	Squeaky
+	Stutter
+	Wheezy
+	Whiny
+	Whispery
+
+Character Face
+	Attractive
+	Bearded
+	Big Nose
+	Birthmark
+	Braided Beard
+	Broad-Lipped
+	Buck-Toothed
+	Chiseled
+	Doe-Eyed
+	Earrings
+	Eye Color
+	Eye Twitch
+	Fine-Featured
+	Florid
+	Foggy Eyes
+	Gap-Toothed
+	Goggle-Eyed
+	Grizzled
+	Heterochromia
+	Jowled
+	Jug-Eared
+	Missing Eye
+	Missing Teeth
+	Piercings
+	Pock-Marked
+	Pug Nose
+	Ruddy
+	Scarred
+	Skin Color
+	Squinty
+	Thin-Lipped
+	Toothless
+	Ugly
+	Weather-Beaten
+	Wrinkled
+
+Character Miscelaneous Trait
+	Crooked Posture
+	Missing Fingers
+	Missing Limbs
+	Rigid Posture
+	Smell, Pleasant
+	Smell, Unpleasant
+	Stooping
+	Tattoos
+	Pocket Pet : Race
+
+Character Mannerism
+	Bites Fingernails
+	Chews
+	Distant Stare
+	Doom Predictions
+	Enunciates Clearly
+	Fidgets
+	Makes Puns
+	Paces
+	Sings / Whistles / Humms
+	Squints
+	Taps Fingers
+	Tugs Beard
+	Twirls Hair
+	Uses Wrong Word
+	
+Character Attitude
+	Argumentative
+		Garrulous
+		Hot-tempered
+		Overbearing
+		Articulate
+		Antagonistic
+	Arrogant
+		Haughty
+		Elitist
+		Proud
+		Rude
+		Aloof
+	Capricious
+		Mischievous
+		Impulsive
+		Lusty
+		Irreverent
+		Madcap
+	Careless
+		Thoughtless
+		Absent-minded
+		Dreamy
+		Lacking common sense
+		Insensitive
+	Courageous
+		Brave
+		Craven
+		Shy
+		Fearless
+		Obsequious
+	Curious
+		Inquisitive
+		Prying
+		Intellectual
+		Perceptive
+		Keen
+	Exacting
+		Perfectionist
+		Stern
+		Harsh
+		Punctual
+		Driven
+	Friendly
+		Trusting
+		Kind-hearted
+		Forgiving
+		Easy-going
+		Compassionate
+	Greedy
+		Miserly
+		Hard-hearted
+		Covetous
+		Avaricious
+		Thrifty
+	Generous
+		Wastrel
+		Spendthrift
+		Extravagant
+		Kind
+		Charitable
+	Moody
+		Gloomy
+		Morose
+		Compulsive
+		Irritable
+		Vengeful
+	Naive
+		Honest
+		Truthful
+		Innocent
+		Gullible
+		Hick
+	Opinonated
+		Bigoted
+		Biased
+		Narrow-minded
+		Blustering
+		Hide-bound
+	Optimistic
+		Cheerful
+		Happy
+		Diplomatic
+		Pleasant
+		Foolhardy
+	Pessimistic
+		Fatalistic
+		Depressing
+		Cynical
+		Sarcastic
+		Realistic
+	Quiet
+		Laconic
+		Soft-spoken
+		Secretive
+		Retiring
+		Mousy
+	Sober
+		Practical
+		Level-headed
+		Dull
+		Reverent
+		Ponderous
+	Suspicious
+		Scheming
+		Paranoid
+		Cautious
+		Deceitful
+		Nervous
+	Uncivilized
+		Uncultured
+		Boorish
+		Barbaric
+		Graceless
+		Crude
+	Violent
+		Cruel
+		Sadistic
+		Immoral
+		Jealous
+		Warlike
+	
+Secret
+	Has
+	Doesn't Have
+	Knows about
+	Doesn't Know about
+	Allied with
+	Not Allied with
+	Is
+	Cheats
+	Lies
+	Another Agreement
+	Won't Keep Promise
+	
+Statistic
+	HP
+	Ability : Ability
+	Skill : Skill
+	Saving Throw : Saving Throw
+	Spell : Spell
+	Hit Probability
+	Defense
+	Damage
+	Num of Attacks
+	Movement Speed
+	Initiative
+	
+PC Reward
+	Ability
+	Access
+	Ally
+	Altruism
+	Business
+	Equipment
+	Freedom
+	Information
+	Justice
+	Money
+	Property
+	Recovery
+		Cure Disease / Illness
+		Lift Curse
+		Raise Dead
+		Satiating Hunger
+		Satiating Thirst
+	Skill
+	Title / Rank
+	Tool
+	Vengeance
+	
+NPC Reward
+	Ability
+	Access
+	Ally
+	Business
+	Contract
+	Equipment
+	Freedom
+	Goods
+	Information
+	Money
+	Property
+	Recovery
+		Cure Disease / Illness
+		Lift Curse
+		Raise Dead
+		Satiating Hunger
+		Satiating Thirst
+	Skill
+	Title / Rank
+	Tool
+	Intrinsic
+		Altruism
+		Anger easing
+		Envy easing
+		Fame
+		Friendship
+		Greed easing
+		Guilt easing
+		Honor
+		Jealousy easing
+		Justice
+		Love / Lust
+		Pain easing
+		Pride
+		Reputation
+		Self-Entertainment
+		Vengeance
+
+PC Threat
+	Access Loss
+	Ally Alienation
+	Ally Harm
+	Business Loss
+	Contract Loss
+	Curse
+	Death / Injury
+	Disease / Illness
+	Disinformation
+	Expulsion
+	Extortion
+	Imprisonment
+	Persecution
+	Property Loss
+	PC Reward Lost Opportunity
+	Theft / Robbery
+	Title / Rank Loss
+	Trap
+		
+NPC Threat
+	Access Loss
+	Ally Alienation
+	Ally Harm
+	Bullying
+	Business Loss
+	Contract Loss
+	Curse
+	Death / Injury
+	Disease / Illness
+	Disinformation
+	Expulsion
+	Extortion
+	Friend's Harm
+	Hunger
+	Imprisonment
+	NPC Reward Lost Opportunity
+	Persecution
+	Property Loss
+	Relative's Harm
+	Shelter Loss
+	Theft (Goods)	
+	Theft / Robbery
+	Thirst
+	Title / Rank Loss
+	Intrinsic
+		Defamation
+		Discredit
+		Dishonor
+		Loneliness
+		Shame
+
+Gemstone
+	Amethyst (purple crystal) (10)
+	Aquamarine (pale blue green) (50)
+	Black Opal (dark green) (100)
+	Black Sapphire (black) (500)
+	Blue Quartz (transparent pale blue)
+	Diamond (clear blue-white) (500)
+	Emerald (bright green) (500)
+	Fire Opal (fiery red) (100)
+	Garnet (deep red to violet crystal) (50)
+	Malachite (striated light and dark green)
+	Moonstone (white with pale blue hue)
+	Obsidian (dark black)
+	Onyx (black, white, or bands of both)
+	Opal (pale blue) (100)
+	Pearl (pure white, rose, to black) (50)
+	Ruby (clear to deep crimson red) (500)
+	Sapphire (clear to medium blue) (100)
+	Topaz (golden yellow) (50)
+	Zircon (clear blue-white)
+	
