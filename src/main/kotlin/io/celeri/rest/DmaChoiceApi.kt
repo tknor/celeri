@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.*
 @CrossOrigin
 class DmaChoiceApi(private val choiceService: ChoiceService) {
 
+    @GetMapping("/reload")
+    fun reloadChoices() {
+        choiceService.reloadChoices()
+    }
+
     @GetMapping("/creation-choices")
-    fun creations(): ChoicesDto {
+    fun creationChoices(): ChoicesDto {
         return ChoicesDto(choiceService.creationChoices().map { ChoiceDto(it.label, it.isDisplayed()) })
     }
 

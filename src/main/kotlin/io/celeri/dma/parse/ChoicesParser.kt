@@ -71,6 +71,8 @@ class ChoicesParser {
     private fun handleStandardChoiceParsedLineType(parsedLine: ParsedLine) {
 
         val possibleProperties = parsedLine.propertyLabels.map { findTopChoice(it) }.toCollection(ArrayList())
+        possibleProperties.addAll(previousChoices.last().possibleProperties)
+
         if (parsedLine.reference) {
             val reference = findTopChoice(parsedLine.referenceLabel)
             val child = ReferenceChoice(parsedLine.baseLabel, parsedLine.displayed, reference, possibleProperties = possibleProperties)

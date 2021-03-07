@@ -83,12 +83,12 @@ Art
 	Painting
 	Statuette
 	
-Jewelry
-	Amulet : Gemstone
-	Bracelet : Gemstone
-	Crown : Gemstone
-	Pendant : Gemstone
-	Ring : Gemstone
+Jewelry : Gemstone : Material
+	Amulet
+	Bracelet
+	Crown
+	Pendant
+	Ring
 	
 Clothing
 	Belt
@@ -222,108 +222,118 @@ Location
 		Volcano
 		Waterfall
 
-Feature
-	Magical
-		power released by external
-		power released in bloodline
-		polymorph by external
-	*Width
-		Narrow
-		Wide
-	Material
-		Adamantite
-		Bone
-		Bronze
-		Dwarven Bronze
-		Electrum
-		Elven Steel
-		Flesh
-		Gold
-		Iron
-		Ivory
-		Mithril
-		Platinum
-		Silver
-		Steel
-		Stone
-		Wood
-	Damage
-		Bruises
-		Broken
-		Shattered
-		Burned
-		Scorched
-		Pristine
-		Untouched
-		Ragged
-	*Cleanliness
-		Dirty
-		Clean
-		Washed
-		Slime Covered
-		Liquid Covered
-		Dust Covered
-	Color
-		*Special
-			Colorless
-			Transparent
-			Opaque
-		*Standard
-			Black
-			Blue
-				Sky Blue
-				Sea Blue
-			Brown
-			Green
-				Deep Sea Green
-			Gray
-				Anthracit Gray
-				Cloud Gray
-				Steel Gray
-			Orange
-			Red
-				Sunrise Red
-			Violet
-			White
-				Snow White
-			Yellow
-	Sturdiness
-		Indestructible
-		Sturdy
-		Weak
-	State
-		Burning
-		Wet
-	Character State
-		Anxiety
-		Concussion
-		Confusion
-		Dizziness
-		Fear
-		Nausea
-		Panic
-		Paralysis
-		Vomitting
-		Dying
-		Wounded
-		Burning
-		Invigorated
-		Shiverring with Cold
-		Foam at Mouth
+Magical Feature
+	power released by external
+	power released in bloodline
+	polymorph by external
+
+Width
+	Narrow
+	Wide
+	
+Material
+	Adamantite
+	Bone
+	Bronze
+	Dwarven Bronze
+	Electrum
+	Elven Steel
+	Flesh
+	Gold
+	Iron
+	Ivory
+	Mithril
+	Platinum
+	Silver
+	Steel
+	Stone
+	Wood
+
+Damage
+	Bruises
+	Broken
+	Shattered
+	Burned
+	Scorched
+	Pristine
+	Untouched
+	Ragged
+
+Cleanliness
+	Dirty
+	Clean
+	Washed
+	Slime Covered
+	Liquid Covered
+	Dust Covered
+
+Color
+	*Special
+		Colorless
+		Transparent
+		Opaque
+	*Standard
+		Black
+		Blue
+			Sky Blue
+			Sea Blue
+		Brown
+		Green
+			Deep Sea Green
+		Gray
+			Anthracit Gray
+			Cloud Gray
+			Steel Gray
+		Orange
+		Red
+			Sunrise Red
+		Violet
+		White
+			Snow White
+		Yellow
+
+Sturdiness
+	Indestructible
+	Sturdy
+	Weak
+
+Object State
+	Burning
+	Wet
+
+Character State
+	Anxiety
+	Concussion
+	Confusion
+	Dizziness
+	Fear
+	Nausea
+	Panic
+	Paralysis
+	Vomitting
+	Dying
+	Wounded
+	Burning
+	Invigorated
+	Shiverring with Cold
+	Foam at Mouth
+
+Artistic Feature
 	Embroided
 	Engraved
 	Ordinary
-	Place
-		Untidy
-		Messy
-		Dusty
-		Warm
-		Cold
-		Decorated with Art
-		Decorated with Flowers
-		with Served Food
-		Infested with Insects
-		Infested with Vermin
+	
+Place Feature
+	Untidy
+	Messy
+	Dusty
+	Warm
+	Cold
+	Decorated with Art
+	Decorated with Flowers
+	with Served Food
+	Infested with Insects
+	Infested with Vermin
 	
 Furniture
 	*Entrance

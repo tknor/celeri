@@ -3,8 +3,16 @@ package io.celeri.dma.service
 import io.celeri.dma.domain.choice.Choice
 import io.celeri.dma.domain.choice.StandardChoice
 import io.celeri.dma.domain.choice.TopChoice
+import io.celeri.dma.parse.ChoicesParser
+import org.springframework.stereotype.Service
 
-class ChoiceService(private val topChoices: List<TopChoice>) {
+class ChoiceService {
+
+    private var topChoices: List<TopChoice> = emptyList()
+
+    fun reloadChoices() {
+        topChoices = ChoicesParser().parse("src/main/resources/choices.txt")
+    }
 
     fun creationChoices(): List<TopChoice> {
         return topChoices.filter { it.creation }
