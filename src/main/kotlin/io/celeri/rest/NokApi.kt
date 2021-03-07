@@ -29,7 +29,7 @@ class NokApi {
 
     @PostMapping("/defibrillate")
     fun defibrillate(@RequestBody defibrillation: DefibrillationDto): ReportDto {
-        println("CALLED defibrillate with ${defibrillation.hourOffset}")
+
         return ReportDto(
                 "1551546000000",
                 listOf(

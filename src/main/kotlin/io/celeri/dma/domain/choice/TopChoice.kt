@@ -9,4 +9,8 @@ class TopChoice(
     override fun toString(): String {
         return "TopChoice($label)"
     }
+
+    override fun isDisplayed(): Boolean {
+        return true
+    }
 }

@@ -11,4 +11,8 @@ open class StandardChoice(
     override fun toString(): String {
         return "StandardChoice($label)"
     }
+
+    override fun isDisplayed(): Boolean {
+        return displayed
+    }
 }
