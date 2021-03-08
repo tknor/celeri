@@ -2,12 +2,16 @@ package io.celeri.dma.domain.choice
 
 abstract class Choice(
         val label: String,
-        val children: ArrayList<StandardChoice> = ArrayList(),
+        private val children: ArrayList<StandardChoice> = ArrayList(),
         val possibleProperties: ArrayList<TopChoice> = ArrayList()) {
 
     abstract fun isDisplayed(): Boolean
 
-    fun findChild(labels: List<String>, index: Int): StandardChoice? {
+    open fun getChildren(): ArrayList<StandardChoice> {
+        return children
+    }
+
+    open fun findChild(labels: List<String>, index: Int): StandardChoice? {
 
         val found = children.find { it.label == labels[index]} ?: return null
 

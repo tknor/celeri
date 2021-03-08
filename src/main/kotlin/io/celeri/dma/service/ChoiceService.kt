@@ -31,10 +31,18 @@ class ChoiceService {
     }
 
     fun childrenOf(labels: List<String>): List<StandardChoice> {
-        return choiceOf(labels)?.children ?: emptyList()
+        return choiceOf(labels)?.getChildren() ?: emptyList()
     }
 
     fun possiblePropertiesOf(labels: List<String>): List<TopChoice> {
         return choiceOf(labels)?.possibleProperties ?: emptyList()
     }
+}
+
+fun main() {
+
+    val choiceService = ChoiceService()
+    choiceService.reloadChoices()
+    val found = choiceService.childrenOf(listOf("Art", "Engraved Weapon", "Melee"))
+    println()
 }

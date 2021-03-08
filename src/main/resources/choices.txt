@@ -1,7 +1,7 @@
 
-*Character : Special Character : Race : Profession : Alignment : Character Trait : Clothes : Equipment : Skill : Secret : Jewelry
+*Character : Special Character Type : Race : Profession : Alignment : Character Trait : Clothes : Equipment : Skill : Jewelry : Character State
 	
-*Encounter : PC Reward : PC Threat : Location : Daytime : Surface / Terrain / Set : Weather : Encounter Feature : Sense
+*Encounter : PC Reward : PC Threat : Location : Daytime : Surface : Weather : Encounter Feature : Lighting : Sound : Smell : Other Sensual : Temperature
 
 *Plot : PC Reward : PC Threat : NPC Reward : NPC Threat
 
@@ -21,17 +21,21 @@ Alignment
 
 Race
 	Common Race > Common Race
-	Monster
-		Demon
-		Ghost
-		Humanoid
-		Mutant
-		Undead
-	Animal
-		Dog
-		Cat
-		Bear
+	Monster > Monster
+	Animal > Animal
 
+Monster
+	Demon
+	Ghost
+	Humanoid
+	Mutant
+	Undead
+	
+Animal
+	Dog
+	Cat
+	Bear
+		
 Common Race
 	Dwarf
 	Elf
@@ -41,10 +45,10 @@ Common Race
 	Halfling
 	Human
 
-Special Character
+Special Character Type
 	Nature
 	Sentient Artifact
-	Intelligent Animal : Race
+	Intelligent Animal > Animal
 	God : Race
 	
 Saving Throw
@@ -61,6 +65,7 @@ Ability
 	Charisma
 
 Liquid
+	Slime
 	Acid
 	Blood
 	Lava
@@ -70,27 +75,29 @@ Liquid
 	Sand
 	Water
 	
-Art
+*Art : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Carpet
 	Chalice
-	Comb With Stones : Gemstone
+	Comb With Gemstones : Gemstone
 	Dice
 	Embroided Cloth
 	Embroided Clothes
-	Engraved Weapon : Melee Weapon : Ranged Weapon
-	Figurine
-	Mask
+	Engraved Weapon
+		*Melee > Melee Weapon
+		*Ranged > Ranged Weapon
+	Figurine > Race
+	Mask > Race
 	Painting
-	Statuette
+	Statue > Race
 	
-Jewelry : Gemstone : Material
+*Jewelry : Gemstone : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Amulet
 	Bracelet
 	Crown
 	Pendant
 	Ring
 	
-Clothing
+*Clothing : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Belt
 	Boots
 	Cloak
@@ -103,76 +110,92 @@ Clothing
 	Sandals
 	Shoes
 	Vest
+	Bracers
 	
-Location
-	*Room
-		Arena
-		Fighting Pit
-		Armory
-		Audience Chamber
-		Burial Site
-		Cellar
-		Chapel
-		Dumping Grounds
-		Forge
-		Guard Post
-		Hall
-		Jail
-		Kitchen
-		Larder
-		Library
-		Meeting Room
-		Museum
-		Nursery
-		Quarters
-		Smelting Furnace
-		Storage
-		Study
-		Temple
-		Torture Room
-		Throne Room
-		Training Area
-		Treasury
-		Water Supply
-		Workshop : Profession
-	*Fortification
-		Castle
-		Fortress
-		Gate
-		Keep
-		Tower
-		Wall
-	*Building
-		Arena
-		Bell Tower
-		Brothel
-		Church
-		House
-		Mage Tower
-		Merchant
-		Orphanage
-		Palace
-		Prison
-		Tavern
-		Temple
-		Townhall
-		Warehouse
-		Watch Tower
-		Workshop : Profession
-		Windmill
-		Watermill
-	*Cartographic
-		City
-		Country
-		Land
-		Settlement
-		Town
-		Village
-		Farm
-		Farmland
-	*Structure
+*Location
+	*Man-Made Structure > Man-Made Structure
+	*Natural Structure > Natural Structure
+	*Cartographic > Cartographic Location
+	
+*Room : Cleanliness : Damage : Room Feature
+	Arena
+	Fighting Pit
+	Armory
+	Audience Chamber
+	Burial Site
+	Cellar
+	Chapel
+	Dumping Grounds
+	Forge
+	Guard Post
+	Hall
+	Jail
+	Kitchen
+	Larder
+	Library
+	Meeting Room
+	Museum
+	Nursery
+	Quarters
+	Smelting Furnace
+	Storage
+	Study
+	Temple
+	Torture Room
+	Throne Room
+	Training Area
+	Treasury
+	Water Supply
+	Workshop > Craftsman
+
+Fortification : Damage
+	Castle
+	Fortress
+	Gate
+	Keep
+	Tower
+	Wall
+
+*Building : Cleanliness : Damage : Room Feature
+	Arena
+	Bell Tower
+	Brothel
+	Blacksmith
+	Church
+	House
+	Mage Tower
+	Merchant
+	Orphanage
+	Palace
+	Prison
+	Tavern
+	Temple
+	Townhall
+	Warehouse
+	Watch Tower
+	Workshop > Craftsman
+	Windmill
+	Watermill
+	Tomb
+	Mausoleum
+	
+Cartographic Location
+	City
+	Country
+	Land
+	Settlement
+	Town
+	Village
+	Farm
+	Farmland
+
+Man-Made Structure
+	*Room > Room
+	*Fortification > Fortification
+	*Building > Building
+	*Other
 		Boat
-		Bridge : Bridge
+		*Bridge > Bridge
 		Catacombs
 		Dungeon
 		Gate
@@ -185,53 +208,57 @@ Location
 		Fountain
 		Grave
 		Monument
-		Underground Mine
-		Surface Mine
+		Underground Mine : Material
+		Surface Mine : Material
 		Obelisk
 		Pool
 		Statue
 		Shed
-		Tomb
 		Vinyard
 		Wall
-	*Natural Structure
-		Canyon
-		Cave
-		Chasm
-		Cliff
-		Crater
-		Desert
-		Field
-		Glacier
-		Hill
-		Island
-		Jungle
-		Lake
-		Meadow
-		Mesa / Plateau
-		Mountain
-		Mountain Pass
-		Mountain Peak
-		Oasis
-		Plain
-		Ravine / Gorge
-		River
-		Snow Cave
-		Stream
-		Swamp
-		Volcano
-		Waterfall
 
-Magical Feature
-	power released by external
-	power released in bloodline
-	polymorph by external
+Natural Structure
+	Canyon
+	Cave
+	Chasm
+	Cliff
+	Crater
+	Desert
+	Field
+	Glacier
+	Hill
+	Island
+	Jungle
+	Lake
+	Meadow
+	Mesa / Plateau
+	Mountain
+	Mountain Pass
+	Mountain Peak
+	Oasis
+	Plain
+	Ravine / Gorge
+	River
+	Snow Cave
+	Stream
+	Swamp
+	Volcano
+	Waterfall
 
-Width
-	Narrow
-	Wide
+Magical
+	*Elemental
+		Burning
+		Freezing
+		Electrifying
+		Acidic
+	*Trigger
+		Externally triggered
+		Bloodline triggered
+	Polymorphing > Race
+	Spell > Spell
 	
 Material
+	Glass
 	Adamantite
 	Bone
 	Bronze
@@ -248,6 +275,9 @@ Material
 	Steel
 	Stone
 	Wood
+	Leather
+	Silk
+	Cotton
 
 Damage
 	Bruises
@@ -260,17 +290,21 @@ Damage
 	Ragged
 
 Cleanliness
+	Untidy
+	Mess
 	Dirty
 	Clean
-	Washed
-	Slime Covered
-	Liquid Covered
-	Dust Covered
+	Wet > Liquid
+	Dusty
+	Muddy
+	Slimy
+	Spider-webbed
 
 Color
 	*Special
 		Colorless
 		Transparent
+		Translucent
 		Opaque
 	*Standard
 		Black
@@ -297,45 +331,42 @@ Sturdiness
 	Sturdy
 	Weak
 
-Object State
-	Burning
-	Wet
-
 Character State
-	Anxiety
-	Concussion
-	Confusion
 	Dizziness
-	Fear
 	Nausea
+	Confusion
+	Anxiety
+	Fear
 	Panic
 	Paralysis
 	Vomitting
 	Dying
+	Bleeding
 	Wounded
 	Burning
+	Freezing
 	Invigorated
-	Shiverring with Cold
-	Foam at Mouth
+	Shiverring
+	Foam on Mouth
+	Wet > Liquid
+	Hungry
+	Thirsty
+	Poisoned
+	Intoxicated
 
-Artistic Feature
+Aestetical
 	Embroided
 	Engraved
 	Ordinary
 	
-Place Feature
-	Untidy
-	Messy
-	Dusty
-	Warm
-	Cold
+Room Feature
 	Decorated with Art
 	Decorated with Flowers
-	with Served Food
+	Catered
 	Infested with Insects
 	Infested with Vermin
 	
-Furniture
+*Furniture : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	*Entrance
 		Barred Door
 		Concealed Door
@@ -437,9 +468,8 @@ Furniture
 		Workbench
 		Lantern
 
-Other Equipment
-	Common
-		Bracers
+Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
+	*Common
 		Backpack
 		Blanket
 		Bottle
@@ -477,8 +507,7 @@ Other Equipment
 		Torch
 		Oil
 		Whistle
-	Horse
-	Uncommon
+	*Uncommon
 		Poison Flask
 		Potion : Spell
 		Spell Scroll : Spell
@@ -486,10 +515,18 @@ Other Equipment
 		Wand : Spell
 		Spellbook
 		Ring : Spell
+	Horse
 
-Equipment : Helmet : Armor : Shield : Melee Weapon : Ranged Weapon : Clothing : Other Equipment
+Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
+	Helmet > Helmet
+	Armor > Armor
+	Shield > Shield
+	Melee Weapon > Melee Weapon
+	Ranged Weapon > Ranged Weapon
+	Clothing > Clothing
+	Other Equipment > Other Equipment
 
-Armor
+Armor : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Leather Armor (1)
 	Padded Leather Armor (2)
 	Gambeson (2)
@@ -504,7 +541,7 @@ Armor
 	Banded Mail (6)
 	Full Plate Armor (7)
 	
-Shield
+Shield : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Wooden Buckler
 	Small Wooden Shield
 	Large Wooden Shield
@@ -512,13 +549,13 @@ Shield
 	Small Metal Shield
 	Large Metal Shield
 		
-Helmet
+Helmet : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Leather Cap (0)
 	Padded Leather Cap (0)
 	Metal Helmet (1)
 	Full Metal Helmet (1)
 	
-Clothes
+Clothes : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Adventurer
 	Common
 	Flamboyant
@@ -530,7 +567,7 @@ Clothes
 	Soldier
 	Traveller
 
-Melee Weapon
+Melee Weapon : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Axe (1d6+1)
 	Bastard Sword 1H (1d8)
 	Bastard Sword 2H (2d4)
@@ -560,7 +597,7 @@ Melee Weapon
 	Warhammer (1d6+1)
 	Whip (1d4)
 
-Ranged Weapon
+Ranged Weapon : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Blowgun (1d2)
 	Composite Long Bow (1d8)
 	Composite Short Bow (1d6)
@@ -580,34 +617,36 @@ Ranged Weapon
 		Bullet
 		Dart
 		
-Profession
-	Adventurer
-		Bard
-		Cleric
-		Druid
-		Fighter
-		Mage
-		Priest
-		Rogue
-		Sorcerer
-		Thief
-		Warrior
-		Wizard
-	*Artist
-		Acrobat
-		Actor
-		Dancer
-		Musician
-		Jester
-		Juggler
-		Minstrel
-		Painter
-		Playwright
-		Sculpturer
-		Singer
-		Storyteller
-		Tightrope Walker
-		Ventriloquist
+Adventurer Class
+	Bard
+	Cleric
+	Druid
+	Fighter
+	Mage
+	Priest
+	Rogue
+	Sorcerer
+	Thief
+	Warrior
+	Wizard
+
+Artist
+	Acrobat
+	Actor
+	Dancer
+	Musician
+	Jester
+	Juggler
+	Minstrel
+	Painter
+	Playwright
+	Sculpturer
+	Singer
+	Storyteller
+	Tightrope Walker
+	Ventriloquist
+
+Craftsman
 	*White Collar Craft
 		Alchemist
 		Appraiser
@@ -686,19 +725,26 @@ Profession
 		Wheelwright
 		Woodcarver
 		Woodworker
-	*Noble
-		Lord
-		Knight / Sir
-		Baron
-		Baroness
-		Duke
-		Duchess
-		Prince
-		Princess
-		King
-		Queen
-		Emperor
-		Empress
+
+Noble
+	Lord
+	Knight / Sir
+	Baron
+	Baroness
+	Duke
+	Duchess
+	Prince
+	Princess
+	King
+	Queen
+	Emperor
+	Empress
+
+Profession
+	Adventurer > Adventurer Class
+	Artist > Artist
+	Craftsman > Craftsman
+	Noble > Noble
 	*Other Illegal Profession
 		Assassin
 		Bandit
@@ -715,9 +761,9 @@ Profession
 		Executioner
 		Farmer
 		Fortune-Teller
-		Guard
-			Captain
+		*Guard
 			Guard
+			Guard Captain
 		Herald
 		Hunter
 		Innkeeper
@@ -735,7 +781,7 @@ Profession
 		Serf
 		Servant
 		Shepherd
-		Soldier
+		*Soldier
 			Soldier
 			Captain
 			General
@@ -790,20 +836,23 @@ Skill
 	Truth Sense
 	Weather Sense
 
-Surface / Terrain / Set
+Deepness
+	Ankle Deep
+	Knee Deep
+	Waist Deep
+	Neck Deep
+
+Surface
 	Angled
-	Blood
-		Ankle Deep Blood
-		Knee Deep Blood
-		Waist Deep Blood
+	Blood > Deepness
 	Bog
-	Bridge : Bridge
+	*Bridge > Bridge
 	Clay
 	Dirt
 	Falling Danger
 		Cliff
 		Hole
-		Liquid
+		Liquid > Liquid
 	Forest
 		Light Forest
 		Heavy Forest
@@ -818,14 +867,8 @@ Surface / Terrain / Set
 	Marble
 	Moor
 	Mossed Stone
-	Mud
-		Ankle Deep Mud
-		Knee Deep Mud
-		Waist Deep Mud
-	Oil
-		Ankle Deep Oil
-		Knee Deep Oil
-		Waist Deep Oil
+	Mud > Deepness
+	Oil > Deepness
 	Pebbles
 	Road
 		Dirt Trail
@@ -836,11 +879,8 @@ Surface / Terrain / Set
 	Rocks
 	Sand
 	Slippery
-		Liquid
-	Snow
-		Ankle Deep Snow
-		Knee Deep Snow
-		Waist Deep Snow
+		Liquid > Liquid
+	Snow > Deepness
 	Steep
 	Stone
 	Stream
@@ -851,94 +891,97 @@ Surface / Terrain / Set
 	Undergrowth
 		Light Undergrowth
 		Heavy Undergrowth
-	Water
-		Ankle Deep Water
-		Knee Deep Water
-		Waist Deep Water
+	Water > Deepness
 
-Bridge
+Bridge : Cleanliness : Damage
 	Drawbridge
-	Log
-	Plank
+	Single-Log Bridge
+	Single-Plank Bridge
 	Rope Bridge
 	Wood Bridge
 	Stone Bridge
+	Metal Bridge : Material
 
-Sense
-	Vision
-		Lighting
-			Blinding Light
-			Blinding Sunlight
-			Candles
-			Darkness
-			Dim Light
-			Fluorescent
-			Glowing Stone
-			Moonlight
-			Starlight
-			Sunlight
-			Torches
-		Rising dust
-	Hearing
-		March
-		Singing
-		Playing instrument
-		Horse run with different haste, with wagon
-		Armor sounds
-		Building sound
-		Natural structure
-			Waterfall, Lake, etc
-		Walk on different surfaces
-		Celebration
-		Machine
-		Torture
-		Laugh
-		Scream
-	Smell
-		Carcass
-		Fish
-		Smoke
-		Tabacco smoke
-		Pipe weed
-		Humid
-		Difficult
-		Ash
-		Cold Air
-		Hot Air
-		Burning Air
-		Burnt, Meat
-		Burnt, Wood
-		Candles
-		Cold Air
-		Cooked, Soup
-		Damp
-		Dust
-		Flowers
-		Forest
-		Fresh Air
-		Fruits
-		Grass
-		Grilled Meat
-		Metallic
-		Moldy
-		Odorless
-		Perfume
-		Rotten, Eggs
-		Rotten, Meat
-		Rotten, Plants
-		Smoke
-		Spices
-		Sulphur
-		Sweat
-		Sweet
-		Vegetables
-	Touch
-		Temperature
-			Chilling
-			Freezing
-			Hot
-		Air Flow
-	
+Lighting
+	Blinding Light
+	Blinding Sunlight
+	Candles
+	Darkness
+	Dim Light
+	Fluorescent
+	Glowing Stone
+	Moonlight
+	Starlight
+	Sunlight
+	Torches
+
+Sound
+	March
+	Singing
+	Playing Instrument
+	Animal > Animal
+	Moving Armor
+	Building > Building
+	*Natural Structure > Natural Structure
+	Movement on > Surface
+	Celebration
+	Conversation
+	Machine
+	Torture
+	Laugh
+	Scream
+
+Smell
+	Carcass
+	Fish
+	Smoke
+	Tabacco
+	Pipe Weed
+	Humid Air
+	Difficult Breathing
+	Ash
+	Cold Air
+	Hot Air
+	Burning Air
+	Burnt Meat
+	Burnt Wood
+	Candles
+	Cold Air
+	Cooked Soup
+	Damp
+	Dust
+	Flowers
+	Forest
+	Fresh Air
+	Fruits
+	Grass
+	Grilled Meat
+	Metallic
+	Moldy
+	Odorless
+	Perfume
+	Rotten Eggs
+	Rotten Meat
+	Rotten Plants
+	Spices
+	Sulphur
+	Sweat
+	Sweet Smell
+	Vegetables
+
+Other Sensual
+	Rising dust
+	Air Flow
+
+Temperature
+	Warm
+	Hot
+	Cold
+	Frozen
+	Chilling
+	Freezing
+	Body Temperature
+
 Weather
 	Clear
 	Cloudy
@@ -1032,16 +1075,16 @@ Physical Threat
 	Wound, Slash
 	
 Trap Mechanism
-	Detector switched
-	Floor switched
-	String switched
-	Touch switched
+	Detector
+	Floor
+	String
+	Touch
 		
-Trap
+*Trap : Trap Mechanism
 	Bear Trap
-	Breaking Bridge : Trap Mechanism
+	Breaking Bridge
 		Height
-		Liquid : Liquid
+		Liquid Underneath > Liquid
 		Spikes
 	Cave-in
 	Closing Door
@@ -1053,7 +1096,7 @@ Trap
 	Containment Room
 		Air Tight
 		Poison Mist
-		Liquid Filling : Liquid
+		Liquid Filling > Liquid
 	Crusher
 	Deadfall
 		Boulder, Falling
@@ -1087,13 +1130,13 @@ Trap
 	Monster Summoner
 	Pit, Uncovered
 		Height
-		Liquid : Liquid
+		Liquid > Liquid
 		Spikes
 	Pit, Covered
 		Height
-		Liquid : Liquid
+		Liquid > Liquid
 		Spikes
-	Pouring Liquid : Liquid
+	Pouring Liquid > Liquid
 	Snare
 		Anchored / Cutting
 		Pulling
@@ -1101,16 +1144,25 @@ Trap
 	Strangling Vine
 	Trap Door, Opened
 		Height
-		Liquid : Liquid
+		Liquid > Liquid
 		Spikes
 	Trap Door, Locking
 		Height
-		Liquid : Liquid
+		Liquid > Liquid
 		Spikes
 	Travelling Blade
 	Travelling String
 		
-Character Trait : Character Age : Character Attitude : Character Face : Character Hair : Character Height : Character Weight : Character Speech : Character Mannerism : Character Miscelaneous Trait
+Character Trait
+	Character Age > Character Age
+	Character Attitude > Character Attitude
+	Character Face > Character Face
+	Character Hair > Character Hair
+	Character Height > Character Height
+	Character Weight > Character Weight
+	Character Speech > Character Speech
+	Character Mannerism > Character Mannerism
+	Character Miscelaneous Trait > Character Miscelaneous Trait
 
 Character Age
 	CZ
@@ -1187,7 +1239,7 @@ Character Weight
 		Trim
 		Fat
 
-Character Hair
+Character Hair : Color : Cleanliness
 	Bald
 	Braided
 	Cropped
@@ -1428,10 +1480,10 @@ Secret
 	
 Statistic
 	HP
-	Ability : Ability
-	Skill : Skill
-	Saving Throw : Saving Throw
-	Spell : Spell
+	Ability > Ability
+	Skill > Skill
+	Saving Throw > Saving Throw
+	Spell > Spell
 	Hit Probability
 	Defense
 	Damage

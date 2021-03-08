@@ -76,11 +76,11 @@ class ChoicesParser {
         if (parsedLine.reference) {
             val reference = findTopChoice(parsedLine.referenceLabel)
             val child = ReferenceChoice(parsedLine.baseLabel, parsedLine.displayed, reference, possibleProperties = possibleProperties)
-            previousChoices.last().children.add(child)
+            previousChoices.last().getChildren().add(child)
             previousChoices.add(child)
         } else {
             val child = StandardChoice(parsedLine.baseLabel, parsedLine.displayed, possibleProperties = possibleProperties)
-            previousChoices.last().children.add(child)
+            previousChoices.last().getChildren().add(child)
             previousChoices.add(child)
         }
     }
