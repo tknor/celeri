@@ -20,9 +20,9 @@ Alignment
 	Chaotic Evil
 
 Race
+	Animal > Animal
 	Common Race > Common Race
 	Monster > Monster
-	Animal > Animal
 
 Monster
 	Demon
@@ -32,9 +32,9 @@ Monster
 	Undead
 	
 Animal
-	Dog
-	Cat
 	Bear
+	Cat
+	Dog
 		
 Common Race
 	Dwarf
@@ -46,10 +46,10 @@ Common Race
 	Human
 
 Special Character Type
+	God : Race
+	Intelligent Animal > Animal
 	Nature
 	Sentient Artifact
-	Intelligent Animal > Animal
-	God : Race
 	
 Saving Throw
 	Fortitude
@@ -64,8 +64,7 @@ Ability
 	Wisdom / Perception
 	Charisma
 
-Liquid
-	Slime
+Liquid : Temperature
 	Acid
 	Blood
 	Lava
@@ -73,6 +72,7 @@ Liquid
 	Oil
 	Poison
 	Sand
+	Slime
 	Water
 	
 *Art : Magical : Material : Cleanliness : Damage : Color : Aestetical
@@ -100,6 +100,7 @@ Liquid
 *Clothing : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Belt
 	Boots
+	Bracers
 	Cloak
 	Coat
 	Girdle
@@ -110,7 +111,6 @@ Liquid
 	Sandals
 	Shoes
 	Vest
-	Bracers
 	
 *Location
 	*Man-Made Structure > Man-Made Structure
@@ -119,13 +119,13 @@ Liquid
 	
 *Room : Cleanliness : Damage : Room Feature
 	Arena
-	Fighting Pit
 	Armory
 	Audience Chamber
 	Burial Site
 	Cellar
 	Chapel
 	Dumping Grounds
+	Fighting Pit
 	Forge
 	Guard Post
 	Hall
@@ -141,8 +141,8 @@ Liquid
 	Storage
 	Study
 	Temple
-	Torture Room
 	Throne Room
+	Torture Room
 	Training Area
 	Treasury
 	Water Supply
@@ -159,40 +159,39 @@ Fortification : Damage
 *Building : Cleanliness : Damage : Room Feature
 	Arena
 	Bell Tower
-	Brothel
 	Blacksmith
+	Brothel
 	Church
 	House
 	Mage Tower
+	Mausoleum
 	Merchant
 	Orphanage
 	Palace
 	Prison
 	Tavern
 	Temple
+	Tomb
 	Townhall
 	Warehouse
 	Watch Tower
-	Workshop > Craftsman
-	Windmill
 	Watermill
-	Tomb
-	Mausoleum
+	Windmill
+	Workshop > Craftsman
 	
 Cartographic Location
 	City
 	Country
+	Farm
+	Farmland
 	Land
 	Settlement
 	Town
 	Village
-	Farm
-	Farmland
 
 Man-Made Structure
-	*Room > Room
-	*Fortification > Fortification
 	*Building > Building
+	*Fortification > Fortification
 	*Other
 		Boat
 		*Bridge > Bridge
@@ -216,6 +215,7 @@ Man-Made Structure
 		Shed
 		Vinyard
 		Wall
+	*Room > Room
 
 Natural Structure
 	Canyon
@@ -251,61 +251,62 @@ Magical
 		Freezing
 		Electrifying
 		Acidic
+	Polymorphing > Race
+	Spell > Spell
 	*Trigger
 		Externally triggered
 		Bloodline triggered
-	Polymorphing > Race
-	Spell > Spell
 	
 Material
-	Glass
 	Adamantite
 	Bone
 	Bronze
+	Cotton
 	Dwarven Bronze
 	Electrum
 	Elven Steel
 	Flesh
+	Glass
 	Gold
 	Iron
 	Ivory
+	Leather
 	Mithril
 	Platinum
+	Silk
 	Silver
 	Steel
 	Stone
 	Wood
-	Leather
-	Silk
-	Cotton
 
 Damage
-	Bruises
 	Broken
-	Shattered
+	Bruises
 	Burned
-	Scorched
 	Pristine
-	Untouched
 	Ragged
+	Scorched
+	Shattered
+	Untouched
 
 Cleanliness
-	Untidy
-	Mess
-	Dirty
 	Clean
-	Wet > Liquid
+	Dirty
 	Dusty
+	Greasy
+	Mess
 	Muddy
 	Slimy
 	Spider-webbed
+	Untidy
+	Wet > Liquid
 
 Color
 	*Special
 		Colorless
-		Transparent
-		Translucent
 		Opaque
+		Translucent
+		Transparent
 	*Standard
 		Black
 		Blue
@@ -332,27 +333,27 @@ Sturdiness
 	Weak
 
 Character State
-	Dizziness
-	Nausea
-	Confusion
 	Anxiety
+	Bleeding
+	Burning
+	Confusion
+	Dizziness
+	Dying
 	Fear
+	Foam on Mouth
+	Freezing
+	Hungry
+	Intoxicated
+	Invigorated
+	Nausea
 	Panic
 	Paralysis
-	Vomitting
-	Dying
-	Bleeding
-	Wounded
-	Burning
-	Freezing
-	Invigorated
-	Shiverring
-	Foam on Mouth
-	Wet > Liquid
-	Hungry
-	Thirsty
 	Poisoned
-	Intoxicated
+	Shiverring
+	Thirsty
+	Vomitting
+	Wet > Liquid
+	Wounded
 
 Aestetical
 	Embroided
@@ -360,32 +361,29 @@ Aestetical
 	Ordinary
 	
 Room Feature
+	Catered
 	Decorated with Art
 	Decorated with Flowers
-	Catered
 	Infested with Insects
 	Infested with Vermin
 	
 *Furniture : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	*Entrance
-		Barred Door
-		Concealed Door
-		False Door
-		Locked Door
-		Reinforced Door
-		Secret Door
-		Stuck Door
-		Door with bottom window
-		Bar Portcullis
-		Hash Portcullis
+		Portcullis
+			Bar Portcullis
+			Hash Portcullis
+		Door
+			Barred Door
+			Concealed Door
+			Door with Bottom Window
+			False Door
+			Locked Door
+			Reinforced Door
+			Secret Door
+			Stuck Door
 	*Interior
-		Carpet
-		Embroided Cloth
-		Statue
-		Painting
-		Skull
-		Alembics
 		Alcove / Niche
+		Alembics
 		Altar
 		Animal Taxidermy
 		Armor Stand
@@ -402,9 +400,8 @@ Room Feature
 		Cabinet
 		Cage
 		Caldron
-		Grate
-		Sarcophagus
 		Candles
+		Carpet
 		Carpet
 		Catwalk
 		Cave-in
@@ -417,26 +414,30 @@ Room Feature
 		Crate
 		Crevice
 		Curtain
+		Embroided Cloth
 		Evil Symbol
-		Fallen Stones
 		Fallen Masonry
+		Fallen Stones
 		Fire Pit
-		Fireplace
 		Fire Wood
+		Fireplace
 		Floor Fur
 		Flowers
 		Forge
 		Fountain
 		Gong
+		Grate
 		Hole
 		Idol
 		Ladder
+		Lantern
 		Loose Masonry
 		Manacles
 		Mirror
 		Mosaic
 		Murder Hole
 		Oven
+		Painting
 		Painting
 		Pedestal
 		Peephole
@@ -446,12 +447,15 @@ Room Feature
 		Pool
 		Rope
 		Sacrifice Table
+		Sarcophagus
 		Sconce
 		Shaft
 		Shelf
 		Shrine
+		Skull
 		Spider Webs
 		Stairs
+		Statue
 		Statue
 		Stool
 		Table
@@ -466,9 +470,9 @@ Room Feature
 		Weapon Rack
 		Well
 		Workbench
-		Lantern
 
 Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
+	Horse
 	*Common
 		Backpack
 		Blanket
@@ -491,6 +495,7 @@ Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
 		Map
 		Mirror
 		Musical Instrument
+		Oil
 		Oil Flask
 		Paper
 		Papyrus
@@ -505,26 +510,24 @@ Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
 		Spyglass
 		Tent
 		Torch
-		Oil
 		Whistle
 	*Uncommon
 		Poison Flask
 		Potion : Spell
+		Ring : Spell
 		Spell Scroll : Spell
+		Spellbook
 		Staff : Spell
 		Wand : Spell
-		Spellbook
-		Ring : Spell
-	Horse
 
 Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
-	Helmet > Helmet
 	Armor > Armor
-	Shield > Shield
-	Melee Weapon > Melee Weapon
-	Ranged Weapon > Ranged Weapon
 	Clothing > Clothing
+	Helmet > Helmet
+	Melee Weapon > Melee Weapon
 	Other Equipment > Other Equipment
+	Ranged Weapon > Ranged Weapon
+	Shield > Shield
 
 Armor : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Leather Armor (1)
@@ -634,10 +637,10 @@ Artist
 	Acrobat
 	Actor
 	Dancer
-	Musician
 	Jester
 	Juggler
 	Minstrel
+	Musician
 	Painter
 	Playwright
 	Sculpturer
@@ -647,25 +650,6 @@ Artist
 	Ventriloquist
 
 Craftsman
-	*White Collar Craft
-		Alchemist
-		Appraiser
-		Architect
-		Astrologer
-		Astronomer
-		Cartographer
-		Cleric
-		Engineer
-		Gem Cutter
-		Healer
-		Jeweler
-		Librarian
-		Moneylender
-		Navigator
-		Physician
-		Priest
-		Scholar
-		Scribe
 	*Blue Collar Craft
 		Animal Handler
 		Animal Trainer
@@ -725,20 +709,39 @@ Craftsman
 		Wheelwright
 		Woodcarver
 		Woodworker
+	*White Collar Craft
+		Alchemist
+		Appraiser
+		Architect
+		Astrologer
+		Astronomer
+		Cartographer
+		Cleric
+		Engineer
+		Gem Cutter
+		Healer
+		Jeweler
+		Librarian
+		Moneylender
+		Navigator
+		Physician
+		Priest
+		Scholar
+		Scribe
 
 Noble
-	Lord
-	Knight / Sir
 	Baron
 	Baroness
-	Duke
 	Duchess
-	Prince
-	Princess
-	King
-	Queen
+	Duke
 	Emperor
 	Empress
+	King
+	Knight / Sir
+	Lord
+	Prince
+	Princess
+	Queen
 
 Profession
 	Adventurer > Adventurer Class
@@ -843,64 +846,66 @@ Deepness
 	Neck Deep
 
 Surface
-	Angled
-	Blood > Deepness
-	Bog
-	*Bridge > Bridge
-	Clay
-	Dirt
-	Falling Danger
-		Cliff
-		Hole
-		Liquid > Liquid
-	Forest
-		Light Forest
-		Heavy Forest
-		Massive Trees
-	Frozen Snow
-	Grass
-	Gravel
-	Heavy Brush
-	High Grass
-	Ice
-	Jungle
-	Marble
-	Moor
-	Mossed Stone
-	Mud > Deepness
-	Oil > Deepness
-	Pebbles
-	Road
-		Dirt Trail
-		Forest Trail
-		Mud Trail
-		Paved Road
-		Rock Trail
-	Rocks
-	Sand
-	Slippery
-		Liquid > Liquid
-	Snow > Deepness
-	Steep
-	Stone
-	Stream
-	Submerged In Water
-	Swamp / Marsh
-	Tiles
-	Trail
-	Undergrowth
-		Light Undergrowth
-		Heavy Undergrowth
-	Water > Deepness
+	*Type
+		Blood > Deepness
+		Bog
+		*Bridge > Bridge
+		Clay
+		Dirt
+		Forest
+			Light Forest
+			Heavy Forest
+			Massive Trees
+		Frozen Snow
+		Grass
+		Gravel
+		Heavy Brush
+		High Grass
+		Ice
+		Jungle
+		Marble
+		Moor
+		Mossed Stone
+		Mud > Deepness
+		Oil > Deepness
+		Pebbles
+		Road
+			Dirt Trail
+			Forest Trail
+			Mud Trail
+			Paved Road
+			Rock Trail
+		Rocks
+		Sand
+		Snow > Deepness
+		Stone
+		Stream
+		Submerged In Water
+		Swamp / Marsh
+		Tiles
+		Trail
+		Undergrowth
+			Light Undergrowth
+			Heavy Undergrowth
+		Water > Deepness
+	*Property
+		Angled
+		Falling Danger
+			Cliff
+			Hole
+			Liquid > Liquid
+		Slippery
+			Liquid > Liquid
+		Steep
 
 Bridge : Cleanliness : Damage
-	Drawbridge
 	Single-Log Bridge
 	Single-Plank Bridge
 	Rope Bridge
 	Wood Bridge
 	Stone Bridge
 	Metal Bridge : Material
+	Drawbridge
 
 Lighting
 	Blinding Light
@@ -916,73 +921,78 @@ Lighting
 	Torches
 
 Sound
-	March
-	Singing
-	Playing Instrument
 	Animal > Animal
-	Moving Armor
 	Building > Building
-	*Natural Structure > Natural Structure
-	Movement on > Surface
 	Celebration
 	Conversation
-	Machine
-	Torture
 	Laugh
+	Machine
+	March
+	Movement on > Surface
+	Moving Armor
+	*Natural Structure > Natural Structure
+	Playing Instrument
 	Scream
+	Singing
+	Torture
 
 Smell
-	Carcass
-	Fish
-	Smoke
-	Tabacco
-	Pipe Weed
-	Humid Air
-	Difficult Breathing
 	Ash
-	Cold Air
-	Hot Air
 	Burning Air
 	Burnt Meat
 	Burnt Wood
 	Candles
+	Carcass
+	Cold Air
 	Cold Air
 	Cooked Soup
 	Damp
+	Difficult Breathing
 	Dust
+	Fish
 	Flowers
 	Forest
 	Fresh Air
 	Fruits
 	Grass
 	Grilled Meat
+	Hot Air
+	Humid Air
 	Metallic
 	Moldy
 	Odorless
 	Perfume
+	Pipe Weed
 	Rotten Eggs
 	Rotten Meat
 	Rotten Plants
+	Smoke
 	Spices
 	Sulphur
 	Sweat
 	Sweet Smell
+	Tabacco
 	Vegetables
 
 Other Sensual
-	Rising dust
-	Air Flow
+	Cloud Approaching
+	Near Air Flow
+	Rising Dust at Distance
+	Weather Change
 
 Temperature
-	Warm
-	Hot
-	Cold
-	Frozen
-	Chilling
-	Freezing
 	Body Temperature
+	Burning
+	Chilling
+	Cold
+	Freezing
+	Frozen
+	Hot
+	Scorching
+	Warm
 
 Weather
+	Ash in Air
 	Clear
 	Cloudy
 	Fog
@@ -1002,7 +1012,6 @@ Weather
 	Wind
 		Light Wind
 		Strong Wind
-	Ash
 
 Daytime
 	Dawn
@@ -1018,10 +1027,10 @@ Daytime
 Spell
 	Generic
 		Alteration
-			Pyrokinesis
-			Cryokinesis
 			Telekinesis
 			Transformation
+			Pyrokinesis
+			Cryokinesis
 		Conjuration
 			Animal
 			Demon
@@ -1095,18 +1104,28 @@ Trap Mechanism
 		Poison Layer
 	Containment Room
 		Air Tight
-		Poison Mist
 		Liquid Filling > Liquid
+		Poison Mist
+		Temperature Changing > Temperature
 	Crusher
 	Deadfall
-		Boulder, Falling
+		Boulder(s), Falling
 		Boulder(s), Rolling
 		Falling Stone
 		Log(s), Rolling
 		Log, Direct Sway
 		Log, Sideway Sway
-		Log, Spiked
-	Ejector
+		Log, Sideway Sway, Spiked
+	Ejector, Missile
+		Bolt
+		Bolt, Venomous
+		Cannon Ball
+		Fireball
+		Frost Spike
+		Lightning Bolt
+		Spear
+		Stone Sphere
+	Ejector, Non-Missile
 		Acid
 		Flames
 		Freezing Spray
@@ -1117,15 +1136,6 @@ Trap Mechanism
 	Falling Net
 	Falling Portcullis
 	Glue
-	Missile
-		Bolt
-		Bolt, Venomous
-		Cannon Ball
-		Fireball
-		Frost Spike
-		Lightning Bolt
-		Spear
-		Stone Sphere
 	Monster Releaser
 	Monster Summoner
 	Pit, Uncovered
@@ -1142,11 +1152,11 @@ Trap Mechanism
 		Pulling
 	Spectral Tendrils
 	Strangling Vine
-	Trap Door, Opened
+	Trap Door, Locking
 		Height
 		Liquid > Liquid
 		Spikes
-	Trap Door, Locking
+	Trap Door, Non-Locking
 		Height
 		Liquid > Liquid
 		Spikes
@@ -1165,7 +1175,7 @@ Character Trait
 	Character Miscelaneous Trait > Character Miscelaneous Trait
 
 Character Age
-	CZ
+	*CZ
 		Dospělý
 		Dítě
 		Mladý
@@ -1178,7 +1188,7 @@ Character Age
 		Střední věk
 		Unavený věkem
 		V nejlepších letech
-	EN
+	*EN
 		Ancient
 		Child
 		Decrepit / Worn Out
@@ -1193,7 +1203,7 @@ Character Age
 		Youthful
 
 Character Height
-	CZ
+	*CZ
 		Drobný
 		Gigantický
 		Neohrabaně vysoký
@@ -1201,7 +1211,7 @@ Character Height
 		Obrovský
 		Trpaslík
 		Vysoký
-	EN
+	*EN
 		Gigantic
 		Hulking (Clumsy)
 		Short
@@ -1209,12 +1219,12 @@ Character Height
 		Tiny
 
 Character Weight
-	CZ
+	*CZ
 		Hubený
 		Jako strašák
-		Kost-a-kůže
+		Kost a kůže
 		Obézní
-		Plno-štíhlý
+		Plnoštíhlý
 		Svalnatý
 		Tlustý
 		Vychrtlý
@@ -1222,22 +1232,22 @@ Character Weight
 		Vyzáblý
 		Široká ramena
 		Štíhlý
-	EN
-		Gaunt
+	*EN
 		Broad-Shouldered
+		Fat
+		Gaunt
 		Muscular
 		Obese
+		Plump
 		Pot-Bellied
+		Rotund
 		Scarecrow
 		Skinny
-		Slim
-		Thin
-		Plump
-		Rotund
 		Slender
+		Slim
 		Stout
+		Thin
 		Trim
-		Fat
 
 Character Hair : Color : Cleanliness
 	Bald
@@ -1247,7 +1257,6 @@ Character Hair : Color : Cleanliness
 	Frazzled
 	Greasy
 	Grizzled
-	Hair Color
 	Leonine
 	Limp
 	Salt-and-pepper
@@ -1320,12 +1329,12 @@ Character Miscelaneous Trait
 	Crooked Posture
 	Missing Fingers
 	Missing Limbs
+	Pocket Pet : Race
 	Rigid Posture
 	Smell, Pleasant
 	Smell, Unpleasant
 	Stooping
 	Tattoos
-	Pocket Pet : Race
 
 Character Mannerism
 	Bites Fingernails
@@ -1466,16 +1475,16 @@ Character Attitude
 		Warlike
 	
 Secret
-	Has
-	Doesn't Have
-	Knows about
-	Doesn't Know about
 	Allied with
-	Not Allied with
-	Is
-	Cheats
-	Lies
 	Another Agreement
+	Cheats
+	Doesn't Have
+	Doesn't Know about
+	Has
+	Is
+	Knows about
+	Lies
+	Not Allied with
 	Won't Keep Promise
 	
 Statistic
