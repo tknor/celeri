@@ -1,3 +1,8 @@
+
+/src/main/resources/application-properties.yml
+/unversioned/
+
+
 HELP.md
 .gradle
 build/
