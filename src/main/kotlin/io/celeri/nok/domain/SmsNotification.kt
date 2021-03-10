@@ -1,6 +1,5 @@
 package io.celeri.nok.domain
 
-import io.celeri.nok.hoursToMillis
 import java.nio.file.Path
 import java.time.Instant
 import java.util.*

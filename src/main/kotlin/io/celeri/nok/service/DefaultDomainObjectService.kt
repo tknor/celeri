@@ -1,5 +1,6 @@
 package io.celeri.nok.service
 
+import io.celeri.dma.common.asNullable
 import io.celeri.nok.dao.*
 import io.celeri.nok.dao.entity.*
 import io.celeri.nok.dao.repo.EmailNotificationRepo
@@ -21,14 +22,19 @@ class DefaultDomainObjectService(
 
     override fun watch(): Watch? {
 
-        val watchEntity: WatchEntity? = watchRepo.findById(defaultId).get()
-
-        watchEntity ?: return null
+        val watchEntity: WatchEntity = watchRepo.findById(defaultId).asNullable() ?: return null
 
         val emailNotificationEntities = emailNotificationRepo.findByWatch(watchEntity)
         val smsNotificationEntities = smsNotificationRepo.findByWatch(watchEntity)
 
         return watchMapper(watchEntity, emailNotificationEntities, smsNotificationEntities, this)
+    }
+
+    override fun reportState(): ReportState? {
+
+        val reportStateEntity: ReportStateEntity = reportStateRepo.findById(defaultId).asNullable() ?: return null
+
+        return reportStateMapper(reportStateEntity)
     }
 
     override fun watchHeartbeatChanged(watch: Watch) {

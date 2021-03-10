@@ -27,7 +27,7 @@ fun watchMapper(
     return Watch(watch.id, watch.heartbeat, notifications, watchChangeObserver)
 }
 
-fun emailNotificationMapper(entity: EmailNotificationEntity): EmailNotification = EmailNotification(
+fun emailNotificationMapper(entity: EmailNotificationEntity) = EmailNotification(
         entity.id,
         EmailNotificationTarget(entity.recipientEmail),
         entity.emailSubject,
@@ -35,12 +35,19 @@ fun emailNotificationMapper(entity: EmailNotificationEntity): EmailNotification 
         entity.heartbeatToTriggerMillis,
         entity.lastNotification)
 
-fun smsNotificationMapper(entity: SmsNotificationEntity): SmsNotification = SmsNotification(
+fun smsNotificationMapper(entity: SmsNotificationEntity) = SmsNotification(
         entity.id,
         SmsNotificationTarget(entity.recipientPhoneNumber),
         Paths.get(entity.smsMessageResourcePath),
         entity.heartbeatToTriggerMillis,
         entity.lastNotification)
+
+fun reportStateMapper(entity: ReportStateEntity) = ReportState(
+        entity.id,
+        entity.lastEmail,
+        entity.lastSms,
+        entity.emailFrequencyMillis,
+        entity.smsFrequencyMillis)
 
 fun watchEntityMapper(watch: Watch) = WatchEntity(
         watch.id,

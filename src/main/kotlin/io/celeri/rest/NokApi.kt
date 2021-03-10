@@ -1,7 +1,7 @@
 package io.celeri.rest
 
-import io.celeri.nok.hoursToMillis
-import io.celeri.nok.millisToHours
+import io.celeri.dma.common.hoursToMillis
+import io.celeri.dma.common.millisToHours
 import io.celeri.nok.domain.Watch
 import io.celeri.nok.dto.ButtonDto
 import io.celeri.nok.dto.DefibrillationDto
@@ -16,14 +16,19 @@ import java.time.Instant
 @CrossOrigin
 class NokApi(private val domainObjectService: DomainObjectService) {
 
+    val noWatchFound = RuntimeException("no watch found")
+
     @GetMapping("/report")
     fun report(): ReportDto {
-        return generateReport(domainObjectService.watch())
+
+        return generateReport(domainObjectService.watch() ?: throw noWatchFound)
     }
 
     @PostMapping("/defibrillate")
     fun defibrillate(@RequestBody defibrillation: DefibrillationDto): ReportDto {
-        val watch = domainObjectService.watch()
+
+        val watch = domainObjectService.watch() ?: throw noWatchFound
+
         watch.defibrillate(hoursToMillis(defibrillation.hourOffset))
         return generateReport(watch)
     }
