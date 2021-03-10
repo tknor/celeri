@@ -7,6 +7,6 @@ import io.celeri.nok.domain.Watch
 interface WatchChangeObserver {
 
     fun watchHeartbeatChanged(watch: Watch)
-    fun watchEmailNotificationSent(notification: EmailNotification)
-    fun watchSmsNotificationSent(notification: SmsNotification)
+    fun watchEmailNotificationSent(watch: Watch, notification: EmailNotification)
+    fun watchSmsNotificationSent(watch: Watch, notification: SmsNotification)
 }

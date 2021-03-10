@@ -6,5 +6,5 @@ import io.celeri.nok.domain.change.WatchChangeObserver
 
 interface DomainObjectService: WatchChangeObserver, ReportStateChangeObserver {
 
-    fun watch(): Watch
+    fun watch(): Watch?
 }

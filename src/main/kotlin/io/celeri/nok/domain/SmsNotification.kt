@@ -6,11 +6,11 @@ import java.time.Instant
 import java.util.*
 
 class SmsNotification(
-        private val id: UUID,
-        private val notificationTarget: SmsNotificationTarget,
-        private val smsMessageResourcePath: Path,
-        private val heartbeatToTriggerMillis: Float,
-        private val lastNotification: Instant
+        val id: UUID,
+        val notificationTarget: SmsNotificationTarget,
+        val smsMessageResourcePath: Path,
+        val heartbeatToTriggerMillis: Long,
+        val lastNotification: Instant
 ): Notification {
 
     override fun notificationTarget(): NotificationTarget = notificationTarget

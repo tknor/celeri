@@ -1,8 +1,8 @@
 package io.celeri.dao
 
-import io.celeri.nok.dao.EmailNotificationRepo
-import io.celeri.nok.dao.ReportStateRepo
-import io.celeri.nok.dao.WatchRepo
+import io.celeri.nok.dao.repo.EmailNotificationRepo
+import io.celeri.nok.dao.repo.ReportStateRepo
+import io.celeri.nok.dao.repo.WatchRepo
 import io.celeri.nok.dao.entity.WatchEntity
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

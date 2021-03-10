@@ -1,17 +1,16 @@
 package io.celeri.nok.domain
 
-import io.celeri.nok.hoursToMillis
 import java.nio.file.Path
 import java.time.Instant
 import java.util.*
 
 class EmailNotification(
-        private val id: UUID,
-        private val notificationTarget: EmailNotificationTarget,
-        private val emailSubject: String,
-        private val emailMessageResourcePath: Path,
-        private val heartbeatToTriggerMillis: Long,
-        private val lastNotification: Instant
+        val id: UUID,
+        val notificationTarget: EmailNotificationTarget,
+        val emailSubject: String,
+        val emailMessageResourcePath: Path,
+        val heartbeatToTriggerMillis: Long,
+        val lastNotification: Instant
 ): Notification {
 
     override fun notificationTarget(): NotificationTarget = notificationTarget
