@@ -7,6 +7,6 @@ class EmailNotificationConfig(
         val id: String,
         val recipientEmail: String,
         val emailSubject: String,
-        val emailMessageResource: String, // TODO try Path
-        val afterInactivityHours: Float
+        val emailMessageResourcePath: String, // TODO try Path
+        val heartbeatToTriggerMinutes: Long
 )

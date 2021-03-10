@@ -38,7 +38,7 @@ class NokApi(private val domainObjectService: DomainObjectService) {
     private fun generateButtons(watch: Watch): List<ButtonDto> = listOf(-1, 0, 1)
             .map { ButtonDto(
                     it,
-                    watch.calculateNotificationTime(hoursToMillis(it))
+                    watch.nextNotificationTime(hoursToMillis(it))
                             .toEpochMilli()
                             .toString()) }
 
@@ -48,7 +48,7 @@ class NokApi(private val domainObjectService: DomainObjectService) {
         return watch.notifications
                 .map { NotificationDto(
                         it.notificationTarget().stringRepresentation(),
-                        millisToHours(it.inactivityMillisUntilTrigger()),
-                        now.plusMillis(it.inactivityMillisUntilTrigger()).toEpochMilli().toString()) }
+                        millisToHours(it.heartbeatToTriggerMillis()),
+                        now.plusMillis(it.heartbeatToTriggerMillis()).toEpochMilli().toString()) }
     }
 }

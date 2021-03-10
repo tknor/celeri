@@ -3,17 +3,18 @@ package io.celeri.nok.domain
 import io.celeri.nok.hoursToMillis
 import java.nio.file.Path
 import java.time.Instant
+import java.util.*
 
-class PreconfiguredEmailNotification(
-        private val id: String,
+class EmailNotification(
+        private val id: UUID,
         private val notificationTarget: EmailNotificationTarget,
         private val emailSubject: String,
-        private val emailMessageResource: Path,
-        private val afterInactivityHours: Float,
-        private val lastNotificationInstant: Instant
+        private val emailMessageResourcePath: Path,
+        private val heartbeatToTriggerMillis: Long,
+        private val lastNotification: Instant
 ): Notification {
 
     override fun notificationTarget(): NotificationTarget = notificationTarget
 
-    override fun inactivityMillisUntilTrigger(): Long = hoursToMillis(afterInactivityHours)
+    override fun heartbeatToTriggerMillis(): Long = heartbeatToTriggerMillis
 }

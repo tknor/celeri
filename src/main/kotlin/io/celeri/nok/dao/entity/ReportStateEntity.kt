@@ -9,7 +9,7 @@ class ReportStateEntity(
         @Id val id: String,
         val lastEmail: Instant,
         val lastSms: Instant,
-        val emailFrequency: Long,
-        val smsFrequency: Long
+        val emailFrequencyMillis: Long,
+        val smsFrequencyMillis: Long
 ) {
 }

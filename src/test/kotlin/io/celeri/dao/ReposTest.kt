@@ -1,6 +1,6 @@
 package io.celeri.dao
 
-import io.celeri.nok.dao.NotificationStateRepo
+import io.celeri.nok.dao.EmailNotificationRepo
 import io.celeri.nok.dao.ReportStateRepo
 import io.celeri.nok.dao.WatchRepo
 import io.celeri.nok.dao.entity.WatchEntity
@@ -13,7 +13,7 @@ import java.time.Instant
 @DataJpaTest
 class ReposTest @Autowired constructor(
         val watchRepo: WatchRepo,
-        val notificationStateRepo: NotificationStateRepo,
+        val emailNotificationRepo: EmailNotificationRepo,
         val reportStateRepo: ReportStateRepo
 ) {
 
