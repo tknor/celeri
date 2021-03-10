@@ -1,0 +1,38 @@
+
+celeri:
+  
+  gmailCredentialsPath: X
+  gmailTokensPath: X
+  sendingEmail: X
+  adminsEmail: X
+  adminsPhoneNumber: X
+  
+  smsBrana:
+    login: X
+    password: X
+
+  notifications:
+    emailNotifications:
+      -
+        id: X
+        recipientEmail: X
+        emailSubject: X
+        emailMessageResource: unversioned/nok/email.txt
+        afterInactivityHours: 13.0
+
+    smsNotifications:
+      -
+        id: X
+        recipientPhoneNumber: X
+        smsMessageResource: unversioned/nok/sms.txt
+        afterInactivityHours: 13.0
+
+# ------------------
+# Spring Actuator
+# ------------------
+
+management:
+  endpoint.shutdown.enabled: true
+  endpoints:
+    web.exposure.include: "*"
+    shutdown.enabled: true
