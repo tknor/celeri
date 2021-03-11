@@ -6,6 +6,6 @@ import org.springframework.boot.context.properties.ConstructorBinding
 class EmailNotificationConfig(
         val recipientEmail: String,
         val emailSubject: String,
-        val emailMessageResourcePath: String, // TODO try Path
-        val heartbeatToTriggerMinutes: Long
+        val emailMessageResourcePath: String,
+        val heartbeatToTriggerMinutes: Int
 )

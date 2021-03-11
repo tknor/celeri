@@ -14,5 +14,5 @@ class SmsNotification(
 
     override fun notificationTarget(): NotificationTarget = notificationTarget
 
-    override fun heartbeatToTriggerMillis(): Long = heartbeatToTriggerMillis()
+    override fun heartbeatToTriggerMillis(): Long = heartbeatToTriggerMillis
 }

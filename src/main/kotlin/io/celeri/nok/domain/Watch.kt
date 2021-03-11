@@ -7,7 +7,7 @@ class Watch(
         val id: String,
         var heartbeat: Instant,
         val notifications: List<Notification>,
-        val watchChangeObserver: WatchChangeObserver
+        private val watchChangeObserver: WatchChangeObserver
 ) {
 
     fun nextNotificationTime(): Instant {
@@ -18,8 +18,11 @@ class Watch(
         return heartbeat.plusMillis(nextNotification.heartbeatToTriggerMillis())
     }
 
-    fun nextNotificationTime(millisOffset: Long): Instant {
-        return nextNotificationTime().plusMillis(millisOffset)
+    fun nextNotificationHeartbeatToTriggerMillis(): Long {
+
+        if (notifications.isEmpty()) return Long.MAX_VALUE
+
+        return notifications.sortedBy { it.heartbeatToTriggerMillis() }.first().heartbeatToTriggerMillis()
     }
 
     fun defibrillate(millisOffset: Long) {

@@ -5,6 +5,6 @@ import org.springframework.boot.context.properties.ConstructorBinding
 @ConstructorBinding
 class SmsNotificationConfig(
         val recipientPhoneNumber: String,
-        val smsMessageResourcePath: String, // TODO try Path
-        val heartbeatToTriggerMinutes: Float
+        val smsMessageResourcePath: String,
+        val heartbeatToTriggerMinutes: Int
 )

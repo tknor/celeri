@@ -1,5 +1,8 @@
 package io.celeri.nok.dao
 
+import io.celeri.dma.common.minutesToMillis
+import io.celeri.nok.config.EmailNotificationConfig
+import io.celeri.nok.config.SmsNotificationConfig
 import io.celeri.nok.dao.entity.EmailNotificationEntity
 import io.celeri.nok.dao.entity.ReportStateEntity
 import io.celeri.nok.dao.entity.SmsNotificationEntity
@@ -7,24 +10,27 @@ import io.celeri.nok.dao.entity.WatchEntity
 import io.celeri.nok.domain.*
 import io.celeri.nok.domain.change.WatchChangeObserver
 import java.nio.file.Paths
+import java.time.Instant
+import java.util.*
+import kotlin.collections.ArrayList
 
 fun watchMapper(
-        watch: WatchEntity,
-        emailNotifications: List<EmailNotificationEntity>,
-        smsNotifications: List<SmsNotificationEntity>,
+        watchEntity: WatchEntity,
+        emailNotificationEntities: List<EmailNotificationEntity>,
+        smsNotificationEntities: List<SmsNotificationEntity>,
         watchChangeObserver: WatchChangeObserver): Watch {
 
     val notifications = ArrayList<Notification>()
 
-    emailNotifications
+    emailNotificationEntities
             .map { emailNotificationMapper(it) }
             .forEach { notifications.add(it) }
 
-    smsNotifications
+    smsNotificationEntities
             .map { smsNotificationMapper(it) }
             .forEach { notifications.add(it) }
 
-    return Watch(watch.id, watch.heartbeat, notifications, watchChangeObserver)
+    return Watch(watchEntity.id, watchEntity.heartbeat, notifications, watchChangeObserver)
 }
 
 fun emailNotificationMapper(entity: EmailNotificationEntity) = EmailNotification(
@@ -62,6 +68,15 @@ fun emailNotificationEntityMapper(watch: Watch, notification: EmailNotification)
         notification.lastNotification,
         WatchEntity(watch.id, watch.heartbeat))
 
+fun emailNotificationEntityMapper(watchEntity: WatchEntity, notification: EmailNotificationConfig) = EmailNotificationEntity(
+        UUID.randomUUID(),
+        notification.recipientEmail,
+        notification.emailSubject,
+        notification.emailMessageResourcePath,
+        minutesToMillis(notification.heartbeatToTriggerMinutes),
+        Instant.now(),
+        watchEntity)
+
 fun smsNotificationEntityMapper(watch: Watch, notification: SmsNotification) = SmsNotificationEntity(
         notification.id,
         notification.notificationTarget.phoneNumber,
@@ -69,6 +84,14 @@ fun smsNotificationEntityMapper(watch: Watch, notification: SmsNotification) = S
         notification.heartbeatToTriggerMillis,
         notification.lastNotification,
         WatchEntity(watch.id, watch.heartbeat))
+
+fun smsNotificationEntityMapper(watchEntity: WatchEntity, notification: SmsNotificationConfig) = SmsNotificationEntity(
+        UUID.randomUUID(),
+        notification.recipientPhoneNumber,
+        notification.smsMessageResourcePath,
+        minutesToMillis(notification.heartbeatToTriggerMinutes),
+        Instant.now(),
+        watchEntity)
 
 fun reportStateEntityMapper(reportState: ReportState) = ReportStateEntity(
         reportState.id,

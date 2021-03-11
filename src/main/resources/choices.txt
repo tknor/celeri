@@ -21,7 +21,7 @@ Alignment
 
 Race
 	Animal > Animal
-	Common Race > Common Race
+	*Common Race > Common Race
 	Monster > Monster
 
 Monster
