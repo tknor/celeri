@@ -1,11 +1,18 @@
 
-*Character : Special Character Type : Race : Profession : Alignment : Character Trait : Clothes : Equipment : Skill : Jewelry : Character State
+*Character : Alignment : Race : Profession : Clothes : Equipment : Jewelry : Character Trait : Character State : Skill : Special Character Type
 	
-*Encounter : PC Reward : PC Threat : Location : Daytime : Surface : Weather : Encounter Feature : Lighting : Sound : Smell : Other Sensual : Temperature
+*Encounter : Situation : PC Reward : PC Threat : Actor : Object : Trap : Location : Daytime : Terrain : Weather : Lighting : Temperature : Sound : Smell : Special Encounter Feature
 
-*Plot : PC Reward : PC Threat : NPC Reward : NPC Threat
+*Plot : Situation : PC Reward : PC Threat : NPC Reward : NPC Threat : Actor : Object
 
-Encounter Feature
+Actor : Secret
+	Actor
+
+Object : Magical : Material : Cleanliness : Damage : Color : Aestetical
+	Art > Art
+	Jewelry > Jewelry
+
+Special Encounter Feature
 	Time Pressure
 
 Alignment
@@ -64,7 +71,7 @@ Ability
 	Wisdom / Perception
 	Charisma
 
-Liquid : Temperature
+Liquid : Cleanliness : Temperature
 	Acid
 	Blood
 	Lava
@@ -74,11 +81,12 @@ Liquid : Temperature
 	Sand
 	Slime
 	Water
+	Water, Salt
 	
-*Art : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Art
 	Carpet
 	Chalice
-	Comb With Gemstones : Gemstone
+	Comb with Gemstones : Gemstone
 	Dice
 	Embroided Cloth
 	Embroided Clothes
@@ -90,7 +98,7 @@ Liquid : Temperature
 	Painting
 	Statue > Race
 	
-*Jewelry : Gemstone : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Jewelry : Gemstone : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Amulet
 	Bracelet
 	Crown
@@ -112,7 +120,7 @@ Liquid : Temperature
 	Shoes
 	Vest
 	
-*Location
+Location
 	*Man-Made Structure > Man-Made Structure
 	*Natural Structure > Natural Structure
 	*Cartographic > Cartographic Location
@@ -251,6 +259,7 @@ Magical
 		Freezing
 		Electrifying
 		Acidic
+	Enchanted > Enchantment
 	Polymorphing > Race
 	Spell > Spell
 	*Trigger
@@ -369,10 +378,10 @@ Room Feature
 	
 *Furniture : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	*Entrance
-		Portcullis
+		*Portcullis
 			Bar Portcullis
 			Hash Portcullis
-		Door
+		*Door
 			Barred Door
 			Concealed Door
 			Door with Bottom Window
@@ -472,7 +481,6 @@ Room Feature
 		Workbench
 
 Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
-	Horse
 	*Common
 		Backpack
 		Blanket
@@ -511,6 +519,8 @@ Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
 		Tent
 		Torch
 		Whistle
+	Horse
+	Pet : Animal
 	*Uncommon
 		Poison Flask
 		Potion : Spell
@@ -845,49 +855,55 @@ Deepness
 	Waist Deep
 	Neck Deep
 
-Surface
-	*Type
+Terrain
+	*General
 		Blood > Deepness
+		Grass
+		Grass, High
+		Frozen Snow
+		Gravel
+		Brush, Heavy
+		Marble
+		Ice
+		Mossed Stone
+		Mud > Deepness
+		Pebbles
+		Rocks
+		River > Deepness : Cleanliness : Liquid
+		Sand
+		Snow > Deepness : Cleanliness : Liquid
+		Stone
+		Stream
+		Submerged : Cleanliness : Liquid
+		Water > Deepness
+	*Specific
 		Bog
 		*Bridge > Bridge
 		Clay
 		Dirt
-		Forest
-			Light Forest
-			Heavy Forest
-			Massive Trees
-		Frozen Snow
-		Grass
-		Gravel
-		Heavy Brush
-		High Grass
-		Ice
+		*Forest
+			Forest
+			Forest, Dense
+			Forest, Damaged
+			Forest, Dying
+			Coniferous Forest
+			Coniferous Forest, Dense
+			Deciduous Forest
+			Deciduous Forest, Dense
+			Massive Ancient Forest
 		Jungle
-		Marble
 		Moor
-		Mossed Stone
-		Mud > Deepness
-		Oil > Deepness
-		Pebbles
-		Road
+		*Road
 			Dirt Trail
 			Forest Trail
 			Mud Trail
 			Paved Road
 			Rock Trail
-		Rocks
-		Sand
-		Snow > Deepness
-		Stone
-		Stream
-		Submerged In Water
 		Swamp / Marsh
 		Tiles
 		Trail
 		Undergrowth
-			Light Undergrowth
-			Heavy Undergrowth
-		Water > Deepness
+		Undergrowth, Heavy
 	*Property
 		Angled
 		Falling Danger
@@ -974,12 +990,6 @@ Smell
 	Tabacco
 	Vegetables
 
-Other Sensual
-	Cloud Approaching
-	Near Air Flow
-	Rising Dust at Distance
-	Weather Change
-
 Temperature
 	Body Temperature
 	Burning
@@ -996,22 +1006,20 @@ Weather
 	Clear
 	Cloudy
 	Fog
-		Light Fog
-		Heavy Fog
+	Fog, Heavy
 	Mist
 	Rain
-		Light Rain
-		Heavy Rain
+	Rain, Light
+	Rain, Heavy
 	Scorching Sun
 	Snowing
-	Storm
-		Blizzard
-		Dust Storm
-		Rain Storm
-		Sand Storm
+	Snowing, Blizzard
+	Snowing, Blood
+	Storm, Dust
+	Storm, Rain
+	Storm, Sand
 	Wind
-		Light Wind
-		Strong Wind
+	Wind, Strong
 
 Daytime
 	Dawn
@@ -1025,7 +1033,7 @@ Daytime
 	Eclipse
 	
 Spell
-	Generic
+	*Generic
 		Alteration
 			Telekinesis
 			Transformation
@@ -1067,7 +1075,19 @@ Spell
 		Stats Recovery : Statistic
 		Teleportation
 
-Physical Threat
+Enchantment
+	+1
+	+2
+	+3
+	+4
+	+5
+	-1
+	-2
+	-3
+	-4
+	-5
+
+*Physical Threat
 	Burn, Acid
 	Burn, Electric
 	Burn, Fire
@@ -1089,7 +1109,7 @@ Trap Mechanism
 	String
 	Touch
 		
-*Trap : Trap Mechanism
+Trap : Trap Mechanism
 	Bear Trap
 	Breaking Bridge
 		Height
@@ -1329,7 +1349,6 @@ Character Miscelaneous Trait
 	Crooked Posture
 	Missing Fingers
 	Missing Limbs
-	Pocket Pet : Race
 	Rigid Posture
 	Smell, Pleasant
 	Smell, Unpleasant
@@ -1519,6 +1538,7 @@ PC Reward
 		Satiating Hunger
 		Satiating Thirst
 	Skill
+	Spell
 	Title / Rank
 	Tool
 	Vengeance
@@ -1634,4 +1654,10 @@ Gemstone
 	Sapphire (clear to medium blue) (100)
 	Topaz (golden yellow) (50)
 	Zircon (clear blue-white)
+
+Situation
+	Cloud Approaching
+	Near Air Flow
+	Rising Dust at Distance
+	Weather Change
 	
