@@ -944,7 +944,7 @@ Sound
 	Laugh
 	Machine
 	March
-	Movement on > Surface
+	Movement on > Terrain
 	Moving Armor
 	*Natural Structure > Natural Structure
 	Playing Instrument

@@ -21,7 +21,8 @@ class AfterStartup(
         val watchRepo: WatchRepo,
         val emailNotificationRepo: EmailNotificationRepo,
         val smsNotificationRepo: SmsNotificationRepo,
-        val reportStateRepo: ReportStateRepo) {
+        val reportStateRepo: ReportStateRepo,
+        val nokChecker: NokChecker) {
 
     val defaultId = "default"
 
@@ -45,5 +46,7 @@ class AfterStartup(
                 Instant.now(),
                 Duration.ofHours(48).toMillis(),
                 Duration.ofDays(14).toMillis()))
+
+        nokChecker.start(5)
     }
 }
