@@ -20,7 +20,7 @@ fun watchMapper(
         smsNotificationEntities: List<SmsNotificationEntity>,
         watchChangeObserver: WatchChangeObserver): Watch {
 
-    val notifications = ArrayList<Notification>()
+    val notifications = ArrayList<NotificationPlan>()
 
     emailNotificationEntities
             .map { emailNotificationMapper(it) }
@@ -33,17 +33,17 @@ fun watchMapper(
     return Watch(watchEntity.id, watchEntity.heartbeat, notifications, watchChangeObserver)
 }
 
-fun emailNotificationMapper(entity: EmailNotificationEntity) = EmailNotification(
+fun emailNotificationMapper(entity: EmailNotificationEntity) = EmailNotificationPlan(
         entity.id,
-        EmailNotificationTarget(entity.recipientEmail),
+        EmailNotificationRecipient(entity.recipientEmail),
         entity.emailSubject,
         Paths.get(entity.emailMessageResourcePath),
         entity.heartbeatToTriggerMillis,
         entity.lastNotification)
 
-fun smsNotificationMapper(entity: SmsNotificationEntity) = SmsNotification(
+fun smsNotificationMapper(entity: SmsNotificationEntity) = SmsNotificationPlan(
         entity.id,
-        SmsNotificationTarget(entity.recipientPhoneNumber),
+        SmsNotificationRecipient(entity.recipientPhoneNumber),
         Paths.get(entity.smsMessageResourcePath),
         entity.heartbeatToTriggerMillis,
         entity.lastNotification)
@@ -59,9 +59,9 @@ fun watchEntityMapper(watch: Watch) = WatchEntity(
         watch.id,
         watch.heartbeat)
 
-fun emailNotificationEntityMapper(watch: Watch, notification: EmailNotification) = EmailNotificationEntity(
+fun emailNotificationEntityMapper(watch: Watch, notification: EmailNotificationPlan) = EmailNotificationEntity(
         notification.id,
-        notification.notificationTarget.emailAddress,
+        notification.notificationRecipient.emailAddress,
         notification.emailSubject,
         notification.emailMessageResourcePath.toString(),
         notification.heartbeatToTriggerMillis,
@@ -77,9 +77,9 @@ fun emailNotificationEntityMapper(watchEntity: WatchEntity, notification: EmailN
         Instant.now(),
         watchEntity)
 
-fun smsNotificationEntityMapper(watch: Watch, notification: SmsNotification) = SmsNotificationEntity(
+fun smsNotificationEntityMapper(watch: Watch, notification: SmsNotificationPlan) = SmsNotificationEntity(
         notification.id,
-        notification.notificationTarget.phoneNumber,
+        notification.smsNotificationRecipient.phoneNumber,
         notification.smsMessageResourcePath.toString(),
         notification.heartbeatToTriggerMillis,
         notification.lastNotification,

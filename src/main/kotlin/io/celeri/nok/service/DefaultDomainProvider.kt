@@ -8,15 +8,16 @@ import io.celeri.nok.dao.repo.ReportStateRepo
 import io.celeri.nok.dao.repo.SmsNotificationRepo
 import io.celeri.nok.dao.repo.WatchRepo
 import io.celeri.nok.domain.*
+import io.celeri.nok.service.api.DomainProvider
 import org.springframework.stereotype.Service
 
 @Service
-class DefaultDomainObjectService(
+class DefaultDomainProvider(
         val watchRepo: WatchRepo,
         val emailNotificationRepo: EmailNotificationRepo,
         val smsNotificationRepo: SmsNotificationRepo,
         val reportStateRepo: ReportStateRepo
-): DomainObjectService {
+): DomainProvider {
 
     private val defaultId: String = "default"
 
@@ -41,11 +42,11 @@ class DefaultDomainObjectService(
         watchRepo.save(watchEntityMapper(watch))
     }
 
-    override fun watchEmailNotificationSent(watch: Watch, notification: EmailNotification) {
+    override fun watchEmailNotificationSent(watch: Watch, notification: EmailNotificationPlan) {
         emailNotificationRepo.save(emailNotificationEntityMapper(watch, notification))
     }
 
-    override fun watchSmsNotificationSent(watch: Watch, notification: SmsNotification) {
+    override fun watchSmsNotificationSent(watch: Watch, notification: SmsNotificationPlan) {
         smsNotificationRepo.save(smsNotificationEntityMapper(watch, notification))
     }
 

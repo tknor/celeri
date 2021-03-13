@@ -1,44 +1,42 @@
 package io.celeri.nok.domain
 
-import io.celeri.dma.common.age
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
-import java.time.Duration
+import io.celeri.dma.common.millisSince
+import io.celeri.nok.domain.change.ReportStateChangeObserver
 import java.time.Instant
 
 class ReportState(
-        val id: String,
-        val lastEmail: Instant,
-        val lastSms: Instant,
-        val emailFrequency: Duration,
-        val smsFrequency: Duration
+        var lastEmail: Instant,
+        var lastSms: Instant,
+        val emailFrequencyMillis: Long,
+        val smsFrequencyMillis: Long,
+        private val reportStateChangeObserver: ReportStateChangeObserver,
+        private val emailSender: EmailSender,
+        private val smsSender: SmsSender
 ) {
 
-    companion object {
-        private val log: Logger = LoggerFactory.getLogger(ReportState::class.java)
+    fun sendReportsIfNeeded() {
+
+        val lastEmailAge = lastEmail.millisSince()
+        val lastSmsAge = lastSms.millisSince()
+
+        if (lastEmailAge > emailFrequencyMillis) {
+            createAndSendEmail()
+            lastEmail = Instant.now()
+            reportStateChangeObserver.reportEmailSent(this)
+        }
+
+        if (lastSmsAge > smsFrequencyMillis) {
+            createAndSendSms()
+            this.lastSms = Instant.now()
+            reportStateChangeObserver.reportSmsSent(this)
+        }
     }
 
-    fun sendReportsIfNeeded(
-            emailSending: () -> Unit,
-            smsSending: () -> Unit) {
+    private fun createAndSendEmail() {
+        TODO()
+    }
 
-        Instant.now()
-        try {
-            val lastEmailAge = this.lastEmail.age()
-            val lastSmsAge = this.lastSms.age()
-
-            if (lastEmailAge.seconds) {
-                emailSending()
-                this.lastEmailReportInstant = ofNow()
-            }
-
-            if (lastSmsAge > this.smsReportFrequencyHours) {
-                smsSending()
-                this.lastSmsReportInstant = ofNow()
-            }
-
-        } catch (error) {
-            this.logger.errorSpecific("sendReportsIfNeeded()", error)
-        }
+    private fun createAndSendSms() {
+        TODO()
     }
 }

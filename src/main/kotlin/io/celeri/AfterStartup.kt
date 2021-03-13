@@ -9,6 +9,8 @@ import io.celeri.nok.dao.repo.ReportStateRepo
 import io.celeri.nok.dao.repo.SmsNotificationRepo
 import io.celeri.nok.dao.repo.WatchRepo
 import io.celeri.nok.dao.smsNotificationEntityMapper
+import io.celeri.nok.domain.NokCheck
+import io.celeri.nok.domain.NokChecker
 import org.springframework.boot.context.event.ApplicationReadyEvent
 import org.springframework.context.event.EventListener
 import org.springframework.stereotype.Component
@@ -21,8 +23,7 @@ class AfterStartup(
         val watchRepo: WatchRepo,
         val emailNotificationRepo: EmailNotificationRepo,
         val smsNotificationRepo: SmsNotificationRepo,
-        val reportStateRepo: ReportStateRepo,
-        val nokChecker: NokChecker) {
+        val reportStateRepo: ReportStateRepo) {
 
     val defaultId = "default"
 
@@ -47,6 +48,9 @@ class AfterStartup(
                 Duration.ofHours(48).toMillis(),
                 Duration.ofDays(14).toMillis()))
 
-        nokChecker.start(5)
+        NokChecker(
+                Duration.ofSeconds(5).toMillis(),
+                NokCheck(reportState, watch))
+                    .start()
     }
 }
