@@ -1,17 +1,16 @@
-package io.celeri.dma.service
+package io.celeri.dma
 
 import io.celeri.dma.domain.choice.Choice
 import io.celeri.dma.domain.choice.StandardChoice
 import io.celeri.dma.domain.choice.TopChoice
 import io.celeri.dma.parse.ChoicesParser
-import org.springframework.stereotype.Service
 
-class ChoiceService {
+class Choices(private val choicesParser: ChoicesParser) {
 
     private var topChoices: List<TopChoice> = emptyList()
 
-    fun reloadChoices() {
-        topChoices = ChoicesParser().parse("src/main/resources/choices.txt")
+    fun loadChoices() {
+        topChoices = choicesParser.parse()
     }
 
     fun creationChoices(): List<TopChoice> {
@@ -37,12 +36,4 @@ class ChoiceService {
     fun possiblePropertiesOf(labels: List<String>): List<TopChoice> {
         return choiceOf(labels)?.possibleProperties ?: emptyList()
     }
-}
-
-fun main() {
-
-    val choiceService = ChoiceService()
-    choiceService.reloadChoices()
-    val found = choiceService.childrenOf(listOf("Art", "Engraved Weapon", "Melee"))
-    println()
 }

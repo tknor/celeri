@@ -1,5 +1,6 @@
-package io.celeri.nok.domain
+package io.celeri.nok.check
 
+import io.celeri.nok.domain.ReportState
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import java.util.concurrent.Executors

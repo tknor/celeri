@@ -1,8 +1,8 @@
 package io.celeri.nok.domain
 
-interface NotificationPlan {
+interface Notification {
 
     fun recipient(): NotificationRecipient
     fun heartbeatToTriggerMillis(): Long
-    fun sendNotificationIfNeeded()
+    fun sendIfNeeded()
 }

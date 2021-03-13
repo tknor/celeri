@@ -1,19 +1,17 @@
 package io.celeri.dma.parse
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import io.celeri.dma.domain.choice.Choice
 import io.celeri.dma.domain.choice.ReferenceChoice
 import io.celeri.dma.domain.choice.StandardChoice
 import io.celeri.dma.domain.choice.TopChoice
 import java.io.FileInputStream
-import java.nio.file.Paths
 
-class ChoicesParser {
+class ChoicesParser(private val filePath: String) { // TODO change from String to Path, make sure it loads from outside of JAR
 
     private val topChoices: ArrayList<TopChoice> = ArrayList()
     private var previousChoices: ArrayList<Choice> = ArrayList()
 
-    fun parse(filePath: String): List<TopChoice> {
+    fun parse(): List<TopChoice> {
 
         val parsedLines: ArrayList<ParsedLine> = ArrayList()
 
@@ -94,10 +92,4 @@ class ChoicesParser {
         }
         throw RuntimeException("top level choice '$label' not found")
     }
-}
-
-fun main() {
-
-    val topChoices = ChoicesParser().parse("src/main/resources/choices.txt")
-    println("Done")
 }

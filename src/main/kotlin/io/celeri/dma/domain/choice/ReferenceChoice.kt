@@ -1,12 +1,12 @@
 package io.celeri.dma.domain.choice
 
-import io.celeri.dma.common.ReferenceChoiceChildrenList
+import io.celeri.common.ReferenceChoiceChildrenList
 import kotlin.collections.ArrayList
 
 class ReferenceChoice(
         label: String,
         displayed: Boolean,
-        val reference: TopChoice,
+        private val reference: TopChoice,
         possibleProperties: ArrayList<TopChoice> = ArrayList()) : StandardChoice(label, displayed, ReferenceChoiceChildrenList(), possibleProperties) {
 
     override fun getChildren(): ArrayList<StandardChoice> {

@@ -4,7 +4,7 @@ import java.util.*
 
 open class StandardChoice(
         label: String,
-        val displayed: Boolean = true,
+        private val displayed: Boolean = true,
         children: ArrayList<StandardChoice> = ArrayList(),
         possibleProperties: ArrayList<TopChoice> = ArrayList()) : Choice(label, children, possibleProperties) {
 

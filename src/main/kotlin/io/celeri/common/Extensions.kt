@@ -1,4 +1,4 @@
-package io.celeri.dma.common
+package io.celeri.common
 
 import java.time.Instant
 

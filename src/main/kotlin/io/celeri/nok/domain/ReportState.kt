@@ -1,15 +1,13 @@
 package io.celeri.nok.domain
 
-import io.celeri.dma.common.millisSince
-import io.celeri.nok.domain.change.ReportStateChangeObserver
+import io.celeri.common.millisSince
 import java.time.Instant
 
 class ReportState(
-        var lastEmail: Instant,
-        var lastSms: Instant,
-        val emailFrequencyMillis: Long,
-        val smsFrequencyMillis: Long,
-        private val reportStateChangeObserver: ReportStateChangeObserver,
+        private var lastEmail: Instant,
+        private var lastSms: Instant,
+        private val emailFrequencyMillis: Long,
+        private val smsFrequencyMillis: Long,
         private val emailSender: EmailSender,
         private val smsSender: SmsSender
 ) {
@@ -22,21 +20,19 @@ class ReportState(
         if (lastEmailAge > emailFrequencyMillis) {
             createAndSendEmail()
             lastEmail = Instant.now()
-            reportStateChangeObserver.reportEmailSent(this)
         }
 
         if (lastSmsAge > smsFrequencyMillis) {
             createAndSendSms()
             this.lastSms = Instant.now()
-            reportStateChangeObserver.reportSmsSent(this)
         }
     }
 
     private fun createAndSendEmail() {
-        TODO()
+        // TODO implement
     }
 
     private fun createAndSendSms() {
-        TODO()
+        // TODO implement
     }
 }
