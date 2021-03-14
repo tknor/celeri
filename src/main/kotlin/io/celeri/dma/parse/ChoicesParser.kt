@@ -8,11 +8,12 @@ import java.io.FileInputStream
 
 class ChoicesParser(private val filePath: String) { // TODO change from String to Path, make sure it loads from outside of JAR
 
-    private val topChoices: ArrayList<TopChoice> = ArrayList()
+    private var topChoices: ArrayList<TopChoice> = ArrayList()
     private var previousChoices: ArrayList<Choice> = ArrayList()
 
     fun parse(): List<TopChoice> {
 
+        topChoices = ArrayList()
         val parsedLines: ArrayList<ParsedLine> = ArrayList()
 
         val lines: List<String> = FileInputStream(filePath).bufferedReader().use { it.readLines() }

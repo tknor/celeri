@@ -1,16 +1,28 @@
 
-*Character : Alignment : Race : Profession : Clothes : Equipment : Jewelry : Character Trait : Character State : Skill : Special Character Type
+*Character : Alignment : Race : Profession : Clothes : Equipment : Jewelry : Skill : Character Trait
 	
-*Encounter : Situation : PC Reward : PC Threat : Actor : Object : Trap : Location : Daytime : Terrain : Weather : Lighting : Temperature : Sound : Smell : Special Encounter Feature
+*Encounter : Motivation : Action : Actor : Object : Encounter Set : Encounter Set Detail : Special Encounter Feature
 
-*Plot : Situation : PC Reward : PC Threat : NPC Reward : NPC Threat : Actor : Object
+*Plot : Motivation : Actor : Object : Villain's motive : Villain's method
 
-Actor : Secret
-	Actor
+Motivation
+	PC Reward > PC Reward
+	PC Threat > PC Threat
+	NPC Reward > NPC Reward
+	NPC Threat > NPC Threat
 
-Object : Magical : Material : Cleanliness : Damage : Color : Aestetical
-	Art > Art
-	Jewelry > Jewelry
+Encounter Set
+	Location > Location
+	Daytime > Daytime
+	Terrain > Terrain
+	Weather > Weather
+
+Encounter Set Detail
+	Lighting > Lighting
+	Sound > Sound
+	Smell > Smell
+	Temperature > Temperature
+	Hints > Hints
 
 Special Encounter Feature
 	Time Pressure
@@ -29,7 +41,11 @@ Alignment
 Race
 	Animal > Animal
 	*Common Race > Common Race
+	God : Animal : Common Race : Monster
+	Intelligent Animal > Animal
 	Monster > Monster
+	Nature
+	Sentient Artifact : Object
 
 Monster
 	Demon
@@ -52,12 +68,6 @@ Common Race
 	Halfling
 	Human
 
-Special Character Type
-	God : Race
-	Intelligent Animal > Animal
-	Nature
-	Sentient Artifact
-	
 Saving Throw
 	Fortitude
 	Reflex
@@ -98,14 +108,44 @@ Art
 	Painting
 	Statue > Race
 	
-Jewelry : Gemstone : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Jewelry : Gemstone : Object Feature
 	Amulet
 	Bracelet
 	Crown
 	Pendant
 	Ring
+
+Object Feature
+	Magical
+	Material
+	Cleanliness
+	Sturdiness
+	Damage
+	Color
+	Aestetical
+
+Gemstone
+	Amethyst (purple crystal) (10)
+	Aquamarine (pale blue green) (50)
+	Black Opal (dark green) (100)
+	Black Sapphire (black) (500)
+	Blue Quartz (transparent pale blue)
+	Diamond (clear blue-white) (500)
+	Emerald (bright green) (500)
+	Fire Opal (fiery red) (100)
+	Garnet (deep red to violet crystal) (50)
+	Malachite (striated light and dark green)
+	Moonstone (white with pale blue hue)
+	Obsidian (dark black)
+	Onyx (black, white, or bands of both)
+	Opal (pale blue) (100)
+	Pearl (pure white, rose, to black) (50)
+	Ruby (clear to deep crimson red) (500)
+	Sapphire (clear to medium blue) (100)
+	Topaz (golden yellow) (50)
+	Zircon (clear blue-white)
 	
-*Clothing : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Clothing : Object Feature
 	Belt
 	Boots
 	Bracers
@@ -125,7 +165,7 @@ Location
 	*Natural Structure > Natural Structure
 	*Cartographic > Cartographic Location
 	
-*Room : Cleanliness : Damage : Room Feature
+Room : Cleanliness : Damage : Room Feature
 	Arena
 	Armory
 	Audience Chamber
@@ -164,7 +204,7 @@ Fortification : Damage
 	Tower
 	Wall
 
-*Building : Cleanliness : Damage : Room Feature
+Building : Cleanliness : Sturdiness : Damage : Room Feature
 	Arena
 	Bell Tower
 	Blacksmith
@@ -263,7 +303,6 @@ Magical
 	Polymorphing > Race
 	Spell > Spell
 	*Trigger
-		Externally triggered
 		Bloodline triggered
 	
 Material
@@ -367,7 +406,6 @@ Character State
 Aestetical
 	Embroided
 	Engraved
-	Ordinary
 	
 Room Feature
 	Catered
@@ -376,7 +414,7 @@ Room Feature
 	Infested with Insects
 	Infested with Vermin
 	
-*Furniture : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Furniture : Object Feature
 	*Entrance
 		*Portcullis
 			Bar Portcullis
@@ -480,7 +518,7 @@ Room Feature
 		Well
 		Workbench
 
-Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Other Equipment : Object Feature
 	*Common
 		Backpack
 		Blanket
@@ -530,7 +568,7 @@ Other Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
 		Staff : Spell
 		Wand : Spell
 
-Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Equipment : Object Feature
 	Armor > Armor
 	Clothing > Clothing
 	Helmet > Helmet
@@ -539,7 +577,7 @@ Equipment : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Ranged Weapon > Ranged Weapon
 	Shield > Shield
 
-Armor : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Armor : Object Feature
 	Leather Armor (1)
 	Padded Leather Armor (2)
 	Gambeson (2)
@@ -554,7 +592,7 @@ Armor : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Banded Mail (6)
 	Full Plate Armor (7)
 	
-Shield : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Shield : Object Feature
 	Wooden Buckler
 	Small Wooden Shield
 	Large Wooden Shield
@@ -562,13 +600,13 @@ Shield : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Small Metal Shield
 	Large Metal Shield
 		
-Helmet : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Helmet : Object Feature
 	Leather Cap (0)
 	Padded Leather Cap (0)
 	Metal Helmet (1)
 	Full Metal Helmet (1)
 	
-Clothes : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Clothes : Object Feature
 	Adventurer
 	Common
 	Flamboyant
@@ -580,7 +618,7 @@ Clothes : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Soldier
 	Traveller
 
-Melee Weapon : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Melee Weapon : Object Feature
 	Axe (1d6+1)
 	Bastard Sword 1H (1d8)
 	Bastard Sword 2H (2d4)
@@ -610,7 +648,7 @@ Melee Weapon : Magical : Material : Cleanliness : Damage : Color : Aestetical
 	Warhammer (1d6+1)
 	Whip (1d4)
 
-Ranged Weapon : Magical : Material : Cleanliness : Damage : Color : Aestetical
+Ranged Weapon : Object Feature
 	Blowgun (1d2)
 	Composite Long Bow (1d8)
 	Composite Short Bow (1d6)
@@ -849,7 +887,7 @@ Skill
 	Truth Sense
 	Weather Sense
 
-Deepness
+Depth
 	Ankle Deep
 	Knee Deep
 	Waist Deep
@@ -857,7 +895,7 @@ Deepness
 
 Terrain
 	*General
-		Blood > Deepness
+		Blood > Depth
 		Grass
 		Grass, High
 		Frozen Snow
@@ -866,16 +904,16 @@ Terrain
 		Marble
 		Ice
 		Mossed Stone
-		Mud > Deepness
+		Mud > Depth
 		Pebbles
 		Rocks
-		River > Deepness : Cleanliness : Liquid
+		River > Depth : Cleanliness : Liquid
 		Sand
-		Snow > Deepness : Cleanliness : Liquid
+		Snow > Depth : Cleanliness : Liquid
 		Stone
 		Stream
 		Submerged : Cleanliness : Liquid
-		Water > Deepness
+		Water > Depth
 	*Specific
 		Bog
 		*Bridge > Bridge
@@ -914,7 +952,7 @@ Terrain
 			Liquid > Liquid
 		Steep
 
-Bridge : Cleanliness : Damage
+Bridge : Cleanliness : Sturdiness : Damage
 	Single-Log Bridge
 	Single-Plank Bridge
 	Rope Bridge
@@ -1087,7 +1125,7 @@ Enchantment
 	-4
 	-5
 
-*Physical Threat
+Physical Threat
 	Burn, Acid
 	Burn, Electric
 	Burn, Fire
@@ -1492,20 +1530,7 @@ Character Attitude
 		Immoral
 		Jealous
 		Warlike
-	
-Secret
-	Allied with
-	Another Agreement
-	Cheats
-	Doesn't Have
-	Doesn't Know about
-	Has
-	Is
-	Knows about
-	Lies
-	Not Allied with
-	Won't Keep Promise
-	
+
 Statistic
 	HP
 	Ability > Ability
@@ -1520,12 +1545,12 @@ Statistic
 	Initiative
 	
 PC Reward
-	Ability
+	Ability : Statistic
 	Access
 	Ally
 	Altruism
 	Business
-	Equipment
+	Equipment : Equipment
 	Freedom
 	Information
 	Justice
@@ -1537,19 +1562,19 @@ PC Reward
 		Raise Dead
 		Satiating Hunger
 		Satiating Thirst
-	Skill
-	Spell
+	Skill : Skill
+	Spell : Spell
 	Title / Rank
 	Tool
 	Vengeance
 	
 NPC Reward
-	Ability
+	Ability : Statistic
 	Access
 	Ally
 	Business
 	Contract
-	Equipment
+	Equipment : Equipment
 	Freedom
 	Goods
 	Information
@@ -1561,7 +1586,8 @@ NPC Reward
 		Raise Dead
 		Satiating Hunger
 		Satiating Thirst
-	Skill
+	Skill : Skill
+	Spell : Spell
 	Title / Rank
 	Tool
 	Intrinsic
@@ -1585,11 +1611,11 @@ NPC Reward
 PC Threat
 	Access Loss
 	Ally Alienation
-	Ally Harm
+	Ally Harm : Physical Threat
 	Business Loss
 	Contract Loss
 	Curse
-	Death / Injury
+	Death / Injury : Physical Threat
 	Disease / Illness
 	Disinformation
 	Expulsion
@@ -1605,12 +1631,12 @@ PC Threat
 NPC Threat
 	Access Loss
 	Ally Alienation
-	Ally Harm
+	Ally Harm : Physical Threat
 	Bullying
 	Business Loss
 	Contract Loss
 	Curse
-	Death / Injury
+	Death / Injury : Physical Threat
 	Disease / Illness
 	Disinformation
 	Expulsion
@@ -1634,30 +1660,868 @@ NPC Threat
 		Loneliness
 		Shame
 
-Gemstone
-	Amethyst (purple crystal) (10)
-	Aquamarine (pale blue green) (50)
-	Black Opal (dark green) (100)
-	Black Sapphire (black) (500)
-	Blue Quartz (transparent pale blue)
-	Diamond (clear blue-white) (500)
-	Emerald (bright green) (500)
-	Fire Opal (fiery red) (100)
-	Garnet (deep red to violet crystal) (50)
-	Malachite (striated light and dark green)
-	Moonstone (white with pale blue hue)
-	Obsidian (dark black)
-	Onyx (black, white, or bands of both)
-	Opal (pale blue) (100)
-	Pearl (pure white, rose, to black) (50)
-	Ruby (clear to deep crimson red) (500)
-	Sapphire (clear to medium blue) (100)
-	Topaz (golden yellow) (50)
-	Zircon (clear blue-white)
+Actor : Race : Profession : Clothes : Equipment : Jewelry : Skill : Character Trait : Character State
+	Citizen
+	Clan > Profession
+	Commoner
+	Crowd
+	Cult
+	Family
+	Friend
+	Guardian
+	Guild > Profession
+	Knight Order
+	Magical Circle
+	Monster > Monster
+	Noble
+	Order > Profession
+	Party > Profession
+	Player
+	Relative
+		Aunt
+		Brother
+		Cousin
+		Father
+		Husband
+		Mother
+		Sister
+		Uncle
+		Wife
+	Religious Order
+	Scholar
+	Villager
+	Worshiper
 
-Situation
+Object : Object Feature
+	Art > Art
+	Building > Building
+	Clothing > Clothing
+	Equipment > Equipment
+	Furniture > Furniture
+	Gemstone > Gemstone
+	Jewelry > Jewelry
+	Location > Location
+	Room > Room
+	Tool > Craftsman
+	Trap > Trap
+	
+Hints
 	Cloud Approaching
 	Near Air Flow
 	Rising Dust at Distance
 	Weather Change
 	
+Villain's motive
+	Immortality
+		Acquire a legendary item to prolong life
+		Ascend to godhood
+		Become undead or obtain a younger body
+		Steal a planar creature's essence
+	Influence
+		Seize a position of power or title
+		Win a contest or tournament
+		Win favor with a powerful individual
+		Place a pawn in a position of power
+	Magic
+		Obtain an ancient artifact
+		Build a construct or magical device
+		Carry out a deity's wishes
+		Offer sacrifices to a deity
+		Contact a lost deity or power
+		Open a gate to another world
+	Mayhem
+		Fulfill an apocalyptic prophecy
+		Enact the vengeful will of a god or patron
+		Spread a vile contagion
+		Overthrow a government
+		Trigger a natural disaster
+		Utterly destroy a bloodline or clan
+	Passion
+		Prolong the life of a loved one
+		Prove worthy of another person's love
+		Raise or restore a dead loved one
+		Destroy rivals for another person's affection
+	Power
+		Conquer a region or incite a rebellion
+		Seize control of an army
+		Become the power behind the throne
+		Gain the favor of a ruler
+	Revenge
+		Avenge a past humiliation or insult
+		Avenge a past imprisonment or injury
+		Avenge the death of a loved one
+		Retrieve stolen property and punish the thief
+	Wealth
+		Control natural resources or trade
+		Marry into wealth
+		Plunder ancient ruins
+		Steal land, goods, or money
+	
+Villain's method
+	Agricultural Devastation
+		Blight
+		Drought
+		Famine
+	Arson
+	Bounty Hunting
+	Captivity
+		Imprisonment
+		Kidnapping
+		Shackling
+		Slavery
+	Coercion
+		Blackmail
+		Bribery
+		Enticement
+		Eviction
+		Harassment
+		Impressment
+		Legal Intimidation
+		Threats
+	Defamation 
+		Framing
+		Gossiping
+		Humiliation
+		Insults
+		Libel
+		Slander
+	Execution 
+		Acid
+		Beheading
+		Burning at Stake
+		Burying Alive
+		Crucifixion
+		Dragging
+		Hanging
+		Impalement
+		Quartering
+		Sacrifice
+	Fraud
+		Breach of Contract
+		Cheating
+		Counterfeiting
+		Fast-talking
+		Fine Print
+		Impersonation
+		Lying / Perjury
+	Magical Mayhem
+		Hauntings
+		Illusions
+		Infernal Bargain
+		Mind Control
+		Monster Summoning
+		Petrification
+		Raising Dead
+		Weather Control
+	Murder 
+		Assassination
+		Cannibalism
+		Disease
+		Dismemberment
+		Drowning
+		Electrocution
+		Involuntary Euthanasia
+		Poisoning
+		Provoked Suicide
+		Stabbing
+		Strangulation
+		Suffocation
+	Neglect
+	Politics
+		Assassination
+		Betrayal
+		Conspiracy
+		Espionage
+		Genocide
+		Oppression
+		Raising Taxes
+		Treason
+	Religion
+		Cults
+		Curses
+		Desecration
+		False Gods
+		Heresy
+	Stalking
+	Theft / Property Crime
+		Extortion
+		Highway Robbery
+		Looting
+		Mugging
+		Poaching
+		Seizing Property
+		Smuggling
+	Torture 
+		Beatings
+		Blinding
+		Branding
+		Racking
+		Thumbscrews
+		Whipping
+	Vice 
+		Adultery
+		Substance Use
+		Gambling
+		Seduction
+	Violence
+		Assault
+		Dueling
+	Warfare 
+		Ambush
+		Invasion
+		Massacre
+		Mercenaries
+		Rebellion
+		Terrorism
+		
+Action
+	accept / refuse
+	accept gift
+	accept henchman
+	accept job
+	accept offer
+	accept payment
+	accuse of crime
+	accuse of lie
+	acquire item
+	act / neglect
+	act in dark (DEX)
+	adjust setting
+	admit crime
+	admit lie
+	advise actor
+	agree / disagree
+	agree /w testimony
+	agree to terms
+	aim at captor
+	allow crime
+	allow freedom
+	allow passage
+	allow procedure
+	anticipate ambush
+	anticipate crime
+	anticipate theft
+	apologize
+	appear at meeting
+	apply cure
+	apply force
+	appreciate art
+	appreciate art (WIS)
+	appreciate gem
+	appreciate gem (WIS)
+	approach actor
+	approach animal
+	approve act
+	approve plan
+	argue /w actor (INT)
+	argue for / against
+	argue for actor
+	arrange meeting
+	arrange trap
+	arrive at destination
+	arrive at meeting
+	arrive sooner / later
+	ask actor
+	assure actor
+	astonish actor
+	attach message
+	attack
+	attack actor
+	attack extortionist
+	attack intimidator
+	attempt
+	attend
+	attract
+	attract actor (CHA)
+	attract follower (CHA)
+	avoid
+	awake
+	bake
+	bear
+	beat
+	become
+	believe
+	bend
+	bend bars (STR)
+	bet
+	bind
+	bite
+	blend in (DEX / CHA)
+	block
+	block entrance
+	borrow
+	bow
+	brake
+	break
+	break door (STR)
+	break object (STR)
+	breed
+	bring
+	build
+	build structure (INT)
+	burn
+	buy
+	care
+	carry
+	catch
+	catch /w rope (DEX)
+	catch falling object (DEX)
+	cause
+	cause deadfall (STR)
+	change
+	charge
+	charge actor (STR)
+	chase actor
+	cheat
+	choose
+	choose fate
+	choose route
+	choose route
+	chop
+	claim
+	clear
+	clear cave-in (STR)
+	clear location
+	climb
+	climb broken ladder (DEX)
+	climb cliff (DEX)
+	climb down hole (DEX)
+	climb mountain (DEX)
+	climb over wall (DEX)
+	climb tree (DEX)
+	come
+	command
+	command actor (CHA)
+	commit
+	communicate
+	compare
+	compete
+	compete /w actor (STR)
+	compete with actor
+	complete
+	concentrate /t distraction (WIS)
+	confirm
+	consent
+	construct
+	construct
+	consult
+	contain
+	continue
+	convince
+	cook
+	cover
+	cover from weather
+	crawl
+	crawl /t slit (DEX)
+	crawl under gate (DEX)
+	crawl under portcullis (DEX)
+	create
+	creep
+	criticize
+	cross guarded area
+	cross guarded passage
+	cross guarded room
+	cure
+	cut
+	cut gem (DEX)
+	damage
+	damage mechanism (STR)
+	damage structure (STR)
+	dance
+	deal
+	decide
+	defend
+	defend /f ambush
+	defend /f assassin
+	defend /f robbery
+	defend /f theft
+	defend from ambush
+	defend from theft
+	defend location
+	defer
+	delay
+	deliver
+	demand
+	deny
+	derail
+	derail cart (STR)
+	derail hazard (STR)
+	derail horse (STR)
+	design building (INT)
+	design mechanism (INT)
+	destroy
+	destroy location
+	destroy object
+	determine
+	develop
+	disagree
+	disappear /d opportunity
+	disarm
+	disarm mechanism (DEX)
+	disarm trap (DEX)
+	discover
+	discuss
+	disguise
+	disguise self (CHA)
+	dislike
+	disrupt actor action
+	disrupt enemy action
+	distribute
+	dive
+	do
+	dodge
+	dodge hazard (DEX)
+	dodge trap (DEX)
+	doubt
+	drag
+	drink
+	drive
+	drop
+	dry
+	eat
+	eliminate actor
+	eliminate vermin
+	enable
+	encourage
+	engage
+	enhance
+	ensure
+	enter
+	entertain
+	entertain actor (CHA)
+	escape actor
+	escape chase
+	escape crime scene
+	escape imprisonment
+	escape location
+	escape surround
+	escort actor
+	escort item
+	establish
+	estimate
+	estimate age (WIS)
+	estimate height (WIS)
+	estimate odds (WIS)
+	estimate weight (WIS)
+	euthanize animal
+	euthanize character
+	euthanize monster
+	evade actor
+	evade assassin
+	evade attacker
+	examine
+	expand
+	expect
+	explain
+	explore
+	extend
+	extract actor
+	extract information
+	fall
+	fall safely (DEX)
+	feed
+	feel
+	fight
+	find
+	find direction (WIS)
+	find escaped actor
+	find hidden actor
+	find hidden location
+	find hidden object
+	find lost item
+	find out truth
+	finish
+	fit
+	fly
+	fold
+	follow
+	forbid
+	force open container (STR)
+	force open door (STR)
+	forge
+	forge document (INT)
+	forgive
+	frame actor
+	free
+	free hostage
+	free stuck actor (STR)
+	freeze
+	generate
+	get
+	give
+	go
+	grow
+	handle
+	handle animal (CHA)
+	hang
+	have
+	hear
+	hesitate
+	hide
+	hide (DEX)
+	hide in container (DEX)
+	hide in nature (DEX)
+	hide in shadow (DEX)
+	hit
+	hold
+	hold actor (STR)
+	hold breath (CON)
+	hold closing entrance (STR)
+	hold deadfall (STR)
+	hold door (STR)
+	hold gate (STR)
+	hold hazard (STR)
+	hold hazard (STR)
+	hold onto ceiling (DEX)
+	hold onto ledge (DEX)
+	hold trap (STR)
+	hurry
+	hurt
+	identify
+	identify object (INT)
+	ignore
+	illustrate
+	impress
+	improve
+	include
+	infiltrate group
+	inform
+	insist
+	intercept actor
+	intimidate
+	intimidate actor (CHA)
+	introduce
+	invest
+	investigate
+	investigate actor
+	investigate crime
+	investigate crime scene
+	investigate item
+	investigate location
+	involve
+	jump
+	jump /f height (DEX)
+	jump /o chasm (STR / DEX)
+	jump /o obstacle (STR / DEX)
+	jump /o trap (STR / DEX)
+	jump far (STR / DEX)
+	jump high (STR / DEX)
+	jump on pole (DEX)
+	jump to ledge (STR / DEX)
+	keep
+	kick
+	kill
+	kill silently (DEX)
+	kneel
+	know
+	know fact (INT)
+	laugh
+	lay
+	lead
+	lean
+	leap
+	learn
+	leave
+	lend
+	let
+	lie
+	lie to actor(CHA)
+	lift
+	lift grate (STR)
+	lift object (STR)
+	lift portcullis (STR)
+	light
+	listen
+	listen (WIS)
+	load
+	load / unload (STR)
+	look
+	lose
+	maintain
+	make
+	make cure (INT)
+	make poison (INT)
+	manage
+	manufacture
+	manufacture item (DEX)
+	measure
+	meet
+	melt
+	mention
+	miss
+	mix
+	motivate
+	motivate actor (CHA)
+	move
+	move heavy object (STR)
+	move material (STR)
+	move silently (DEX)
+	neglect
+	negotiate
+	negotiate hostage situation
+	negotiate trade
+	negotiate with actor
+	notice theft (DEX)
+	observe
+	obtain
+	offer
+	open
+	open container
+	open entrance
+	operate
+	operate mechanism
+	operate mechanism (STR)
+	oppose
+	oppose extortion
+	oppose intimidation
+	order
+	organize
+	overcome
+	overcome disease (CON)
+	overcome illness (CON)
+	overtake
+	overthrow
+	overthrow actor (STR)
+	own
+	pacify
+	pacify actor (STR)
+	participate
+	pass
+	pass actor
+	pass guards
+	pass narrow passage (DEX)
+	pass obstacle
+	pass razorvine (DEX)
+	pass trap
+	pay
+	perform
+	persuade
+	persuade actor
+	persuade actor (CHA)
+	pick
+	pick lock (DEX)
+	plan
+	plan assassination
+	plan elimination
+	plan escape
+	plan extraction
+	plan murder
+	plan robbery
+	plan robbery
+	plan sabotage
+	plan theft
+	play
+	point
+	postpone
+	pour
+	practice
+	prepare
+	pretend
+	prevent
+	proceed
+	produce
+	produce potion (INT)
+	produce product (INT)
+	produce scroll (INT)
+	promise
+	propose
+	protect
+	prove
+	pull
+	pull
+	pull heavy chain (STR)
+	punch
+	pursue
+	push
+	put
+	qualify
+	quit
+	rappell down (DEX)
+	react
+	react to ambush (DEX)
+	react to theft (DEX)
+	read
+	read language (INT)
+	read lips (WIS)
+	receive
+	recommend
+	reduce
+	refer
+	refuse
+	relax
+	rely
+	remain
+	remember
+	remember info (INT)
+	remember speech (INT)
+	remember text (INT)
+	remind
+	repair
+	replace
+	represent
+	require
+	resent
+	resist
+	retire
+	rid
+	ride
+	rise
+	risk
+	run
+	run (STR)
+	run to escape (STR)
+	run to intercept (STR)
+	run to reach (STR)
+	sabotage equipment
+	sabotage mission
+	sabotage structure
+	sanction
+	satisfy
+	say
+	see
+	sell
+	send
+	sense
+	sense truth (WIS)
+	sense weather (WIS)
+	serve
+	set
+	settle
+	settle debt
+	settle dispute
+	shake
+	shed
+	shoot
+	show
+	shut
+	sing
+	sink
+	sit
+	sleep
+	slice
+	slide
+	slight of hand (DEX)
+	slip
+	smell
+	snore
+	solve
+	sow
+	speak
+	speak language (INT)
+	spell
+	spend
+	spill
+	spit
+	spot
+	spot ambush (WIS)
+	spot hazard (WIS)
+	spot trap (WIS)
+	spread
+	stack
+	stand
+	steal
+	steal art
+	steal goods
+	steal items
+	steal object
+	stick
+	stir
+	stop
+	strike
+	struggle
+	study
+	stunt-ride (DEX)
+	submit
+	submit to extortionist
+	submit to intimidation
+	submit to intimidator
+	submit to robbery
+	submit to terror
+	substitute /w fake
+	substitute artefact
+	substitute item
+	substitute poison
+	substitute scroll
+	substitute spell
+	subtract item
+	suffer
+	suggest
+	sumbit to extortion
+	supply
+	surprise
+	survive
+	swear
+	swim
+	swim (STR)
+	swim /o stream (STR)
+	swim deep (STR)
+	swing
+	swing on rope (DEX)
+	take
+	talk
+	tame
+	tame animal (CHA)
+	taste
+	teach
+	tear
+	tell
+	tend
+	threaten
+	throw
+	throw object far (STR)
+	throw to trigger mechanism
+	throw to trigger trap
+	thrust
+	thrust person (STR)
+	tolerate
+	torture actor
+	track
+	track actor
+	track animal
+	track escaping actor (WIS)
+	translate
+	translate speech (INT)
+	translate text (INT)
+	transport actor
+	transport item
+	trigger
+	trigger trap
+	try
+	turn
+	turn heavy wheel (STR)
+	unblock
+	unblock entrance
+	understand
+	unload
+	use artefact
+	use potion
+	use scroll
+	vindicate actor
+	vindicate self
+	volunteer
+	wait
+	wake
+	walk
+	walk catwalk (DEX)
+	walk ledge (DEX)
+	walk narrow bridge (DEX)
+	walk tightrope (DEX)
+	warn
+	wash
+	watch
+	wave
+	wear
+	weigh
+	whip
+	win
+	win competition
+	wish
+	withstand
+	withstand charge (STR)
+	withstand disease (CON)
+	withstand smell (CON)
+	withstand taste (CON)
+	withstand temperature (CON)
+	withstand weather (CON)
+	write
+	write language (INT)

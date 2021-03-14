@@ -1,31 +1,29 @@
 
 celeri:
-  
-  gmailCredentialsPath: X
-  gmailTokensPath: X
-  sendingEmail: X
-  adminsEmail: X
-  adminsPhoneNumber: X
-  
+
+  gmailCredentialsPath: x
+  gmailTokensPath: x
+  sendingEmail: x
+  adminsEmail: x
+  adminsPhoneNumber: x
+
   smsBrana:
-    login: X
-    password: X
+    login: x
+    password: x
 
   notifications:
     emailNotifications:
       -
-        id: X
-        recipientEmail: X
-        emailSubject: X
-        emailMessageResource: unversioned/nok/email.txt
-        afterInactivityHours: 13.0
+        recipientAddress: x
+        emailSubject: x
+        emailMessageResourcePath: x
+        heartbeatToTriggerMinutes: x
 
     smsNotifications:
       -
-        id: X
-        recipientPhoneNumber: X
-        smsMessageResource: unversioned/nok/sms.txt
-        afterInactivityHours: 13.0
+        recipientPhoneNumber: x
+        smsMessageResourcePath: x
+        heartbeatToTriggerMinutes: x
 
 # ------------------
 # Spring Actuator
