@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 @EnableConfigurationProperties(NotificationsConfig::class)
-class ConfigsTest @Autowired constructor(
+class ConfigsTest @Autowired constructor( // TODO is autowired constructor needed?
        val notificationsConfig: NotificationsConfig
 ) {
 
@@ -18,6 +18,8 @@ class ConfigsTest @Autowired constructor(
 
     @Test
     fun some() {
+        // TODO use asserts
+
         println(gmailCredentialsPath)
         println(notificationsConfig.emailNotifications.size)
         println(notificationsConfig.smsNotifications.size)

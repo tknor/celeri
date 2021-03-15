@@ -50,7 +50,6 @@ class NokApi(private val nok: Nok) {
     }
 
     private fun generateNotifications(watch: Watch): List<NotificationDto> {
-        val now = Instant.now()
 
         return watch.notifications
                 .map { NotificationDto(

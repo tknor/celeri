@@ -12,4 +12,6 @@ class CeleriApplication
 
 fun main(args: Array<String>) {
 	runApplication<CeleriApplication>(*args)
+
+	// TODO creation storage, detail, editing
 }
