@@ -15,7 +15,7 @@ class AfterStartup(private val nok: Nok) {
     fun afterStartup() {
 
         NokChecker(
-                Duration.ofSeconds(5).toMillis(),
+                Duration.ofSeconds(600).toMillis(),
                 NokCheck(nok))
                 .start()
     }

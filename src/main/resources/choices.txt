@@ -6,10 +6,8 @@
 *Plot : Motivation : Actor : Object : Villain's motive : Villain's method
 
 Motivation
-	PC Reward > PC Reward
-	PC Threat > PC Threat
-	NPC Reward > NPC Reward
-	NPC Threat > NPC Threat
+	Reward > Reward
+	Threat > Threat
 
 Encounter Set
 	Location > Location
@@ -1125,22 +1123,6 @@ Enchantment
 	-4
 	-5
 
-Physical Threat
-	Burn, Acid
-	Burn, Electric
-	Burn, Fire
-	Burn, Frost
-	Crushing
-	Drowning
-	Fall
-	Poison
-	Strangulation
-	Suffocation
-	Venom
-	Wound, Blunt
-	Wound, Piercing
-	Wound, Slash
-	
 Trap Mechanism
 	Detector
 	Floor
@@ -1532,133 +1514,104 @@ Character Attitude
 		Warlike
 
 Statistic
+	Basic > Basic Statistic
+	Combat > Combat Statistic
+
+Basic Statistic
 	HP
 	Ability > Ability
-	Skill > Skill
 	Saving Throw > Saving Throw
-	Spell > Spell
-	Hit Probability
-	Defense
-	Damage
-	Num of Attacks
-	Movement Speed
-	Initiative
-	
-PC Reward
-	Ability : Statistic
-	Access
-	Ally
-	Altruism
-	Business
-	Equipment : Equipment
-	Freedom
-	Information
-	Justice
-	Money
-	Property
-	Recovery
-		Cure Disease / Illness
-		Lift Curse
-		Raise Dead
-		Satiating Hunger
-		Satiating Thirst
-	Skill : Skill
-	Spell : Spell
-	Title / Rank
-	Tool
-	Vengeance
-	
-NPC Reward
-	Ability : Statistic
-	Access
-	Ally
-	Business
-	Contract
-	Equipment : Equipment
-	Freedom
-	Goods
-	Information
-	Money
-	Property
-	Recovery
-		Cure Disease / Illness
-		Lift Curse
-		Raise Dead
-		Satiating Hunger
-		Satiating Thirst
-	Skill : Skill
-	Spell : Spell
-	Title / Rank
-	Tool
-	Intrinsic
-		Altruism
-		Anger easing
-		Envy easing
-		Fame
-		Friendship
-		Greed easing
-		Guilt easing
-		Honor
-		Jealousy easing
-		Justice
-		Love / Lust
-		Pain easing
-		Pride
-		Reputation
-		Self-Entertainment
-		Vengeance
 
-PC Threat
+Combat Statistic
+	Initiative
+	Movement Speed
+	Num of Attacks
+	Hit Probability
+	Damage
+	Defense
+
+Reward
+	Ability : Basic Statistic
+	Access
+	Ally
+	Ally Recovery
+	Altruism / Justice
+	Equipment : Equipment
+	Information
+	Recovery
+		Combat Performance
+		Cure Disease / Illness
+		Freedom
+		Lift Curse
+		Magical Ability
+		Physical Ability
+		Raise Dead
+		Satiating Hunger / Thirst
+		Skill Performance
+	Skill : Skill
+	Spell : Spell
+	Title / Rank / Influence
+	Wealth
+		Business
+		Contract
+		Gold
+		Goods
+		Property
+		Trade
+	
+Threat
 	Access Loss
 	Ally Alienation
-	Ally Harm : Physical Threat
-	Business Loss
-	Contract Loss
-	Curse
-	Death / Injury : Physical Threat
+	Ally Imprisonment
+	Ally Kidnapping
+	Ally Extortion
+	Ally Harm
+	Attack / Murder
+		Ambush
+		Assassination
+		Assault
+		Bounty Hunting
+		Dueling
+		Invasion
+		Poisoning
+		Robbery
+		Stabbing
+		Strangulation
+		Suffocation
 	Disease / Illness
-	Disinformation
-	Expulsion
+	Disinformation	
 	Extortion
-	Imprisonment
-	Persecution
-	Property Loss
-	PC Reward Lost Opportunity
-	Theft / Robbery
-	Title / Rank Loss
+	Fraud
+		Broken Promise
+		Cheating
+		Counterfeiting
+		Impersonation
+		Lying
+	Group Expulsion
+	Hunger / Thirst
+	Imprisonment / Persecution
+	Magical Threat
+		Curse
+		Illusions
+		Mind Control
+		Petrification
+	Opportunity Loss
+	*Performance Loss
+		Combat Performance Loss : Combat Statistic
+		Magical Ability Loss
+		Physical Ability Loss : Basic Statistic
+		Skill Performance Loss
+	Stalking
+	Seduction
+	Sense Loss
+	Theft
+	Title / Rank / Influence Loss
 	Trap
-		
-NPC Threat
-	Access Loss
-	Ally Alienation
-	Ally Harm : Physical Threat
-	Bullying
-	Business Loss
-	Contract Loss
-	Curse
-	Death / Injury : Physical Threat
-	Disease / Illness
-	Disinformation
-	Expulsion
-	Extortion
-	Friend's Harm
-	Hunger
-	Imprisonment
-	NPC Reward Lost Opportunity
-	Persecution
-	Property Loss
-	Relative's Harm
-	Shelter Loss
-	Theft (Goods)	
-	Theft / Robbery
-	Thirst
-	Title / Rank Loss
-	Intrinsic
-		Defamation
-		Discredit
-		Dishonor
-		Loneliness
-		Shame
+	Wealth Loss
+		Gold Seizing
+		Goods Seizing
+		Property Arson
+		Property Seizing
 
 Actor : Race : Profession : Clothes : Equipment : Jewelry : Skill : Character Trait : Character State
 	Citizen
@@ -1713,49 +1666,49 @@ Hints
 	
 Villain's motive
 	Immortality
-		Acquire a legendary item to prolong life
-		Ascend to godhood
-		Become undead or obtain a younger body
-		Steal a planar creature's essence
+		Become god
+		Become immortal
+		Become younger
+		Prolong life
 	Influence
-		Seize a position of power or title
-		Win a contest or tournament
-		Win favor with a powerful individual
-		Place a pawn in a position of power
+		Become power behind scenes
+		Gain favor of powerful individual
+		Place pawn in position of power
+		Seize position of power or title
+		Win contest or tournament
 	Magic
-		Obtain an ancient artifact
-		Build a construct or magical device
-		Carry out a deity's wishes
-		Offer sacrifices to a deity
-		Contact a lost deity or power
-		Open a gate to another world
+		Carry out deity's wishes
+		Construct magical device
+		Contact lost deity
+		Obtain an artifact
+		Offer sacrifices to deity
+		Open gate to another world
 	Mayhem
-		Fulfill an apocalyptic prophecy
-		Enact the vengeful will of a god or patron
-		Spread a vile contagion
-		Overthrow a government
-		Trigger a natural disaster
-		Utterly destroy a bloodline or clan
+		Enact the vengeful will of deity
+		Fulfill apocalyptic prophecy
+		Overthrow government
+		Spread contagion
+		Trigger natural disaster
+		Utterly destroy bloodline or clan
 	Passion
-		Prolong the life of a loved one
+		Prolong life of loved one
 		Prove worthy of another person's love
-		Raise or restore a dead loved one
-		Destroy rivals for another person's affection
+		Raise dead loved one
+		Recover loved one
 	Power
-		Conquer a region or incite a rebellion
-		Seize control of an army
-		Become the power behind the throne
-		Gain the favor of a ruler
+		Conquer region
+		Incite rebellion
+		Seize control of army
 	Revenge
-		Avenge a past humiliation or insult
-		Avenge a past imprisonment or injury
-		Avenge the death of a loved one
-		Retrieve stolen property and punish the thief
+		Avenge death of loved one
+		Avenge past humiliation or insult
+		Avenge past imprisonment or injury
+		Retrieve stolen property and punish thief
 	Wealth
-		Control natural resources or trade
+		Control natural resource or trade
 		Marry into wealth
 		Plunder ancient ruins
-		Steal land, goods, or money
+		Steal land, property, goods, money
 	
 Villain's method
 	Agricultural Devastation
@@ -1797,7 +1750,7 @@ Villain's method
 		Quartering
 		Sacrifice
 	Fraud
-		Breach of Contract
+		Broken Promise
 		Cheating
 		Counterfeiting
 		Fast-talking
@@ -1819,7 +1772,6 @@ Villain's method
 		Disease
 		Dismemberment
 		Drowning
-		Electrocution
 		Involuntary Euthanasia
 		Poisoning
 		Provoked Suicide
@@ -1875,653 +1827,413 @@ Villain's method
 		Terrorism
 		
 Action
-	accept / refuse
-	accept gift
-	accept henchman
-	accept job
-	accept offer
-	accept payment
-	accuse of crime
-	accuse of lie
-	acquire item
-	act / neglect
-	act in dark (DEX)
-	adjust setting
-	admit crime
-	admit lie
-	advise actor
-	agree / disagree
-	agree /w testimony
-	agree to terms
-	aim at captor
-	allow crime
-	allow freedom
-	allow passage
-	allow procedure
-	anticipate ambush
-	anticipate crime
-	anticipate theft
-	apologize
-	appear at meeting
-	apply cure
-	apply force
-	appreciate art
-	appreciate art (WIS)
-	appreciate gem
-	appreciate gem (WIS)
-	approach actor
-	approach animal
-	approve act
-	approve plan
-	argue /w actor (INT)
-	argue for / against
-	argue for actor
-	arrange meeting
-	arrange trap
-	arrive at destination
-	arrive at meeting
-	arrive sooner / later
-	ask actor
-	assure actor
-	astonish actor
-	attach message
-	attack
-	attack actor
-	attack extortionist
-	attack intimidator
-	attempt
-	attend
-	attract
-	attract actor (CHA)
-	attract follower (CHA)
-	avoid
-	awake
-	bake
-	bear
-	beat
-	become
-	believe
-	bend
-	bend bars (STR)
-	bet
-	bind
-	bite
-	blend in (DEX / CHA)
-	block
-	block entrance
-	borrow
-	bow
-	brake
-	break
-	break door (STR)
-	break object (STR)
-	breed
-	bring
-	build
-	build structure (INT)
-	burn
-	buy
-	care
-	carry
-	catch
-	catch /w rope (DEX)
-	catch falling object (DEX)
-	cause
-	cause deadfall (STR)
-	change
-	charge
-	charge actor (STR)
-	chase actor
-	cheat
-	choose
-	choose fate
-	choose route
-	choose route
-	chop
-	claim
-	clear
-	clear cave-in (STR)
-	clear location
-	climb
-	climb broken ladder (DEX)
-	climb cliff (DEX)
-	climb down hole (DEX)
-	climb mountain (DEX)
-	climb over wall (DEX)
-	climb tree (DEX)
-	come
-	command
-	command actor (CHA)
-	commit
-	communicate
-	compare
-	compete
-	compete /w actor (STR)
-	compete with actor
-	complete
-	concentrate /t distraction (WIS)
-	confirm
-	consent
-	construct
-	construct
-	consult
-	contain
-	continue
-	convince
-	cook
-	cover
-	cover from weather
-	crawl
-	crawl /t slit (DEX)
-	crawl under gate (DEX)
-	crawl under portcullis (DEX)
-	create
-	creep
-	criticize
-	cross guarded area
-	cross guarded passage
-	cross guarded room
-	cure
-	cut
-	cut gem (DEX)
-	damage
-	damage mechanism (STR)
-	damage structure (STR)
-	dance
-	deal
-	decide
-	defend
-	defend /f ambush
-	defend /f assassin
-	defend /f robbery
-	defend /f theft
-	defend from ambush
-	defend from theft
-	defend location
-	defer
-	delay
-	deliver
-	demand
-	deny
-	derail
-	derail cart (STR)
-	derail hazard (STR)
-	derail horse (STR)
-	design building (INT)
-	design mechanism (INT)
-	destroy
-	destroy location
-	destroy object
-	determine
-	develop
-	disagree
-	disappear /d opportunity
-	disarm
-	disarm mechanism (DEX)
-	disarm trap (DEX)
-	discover
-	discuss
-	disguise
-	disguise self (CHA)
-	dislike
-	disrupt actor action
-	disrupt enemy action
-	distribute
-	dive
-	do
-	dodge
-	dodge hazard (DEX)
-	dodge trap (DEX)
-	doubt
-	drag
-	drink
-	drive
-	drop
-	dry
-	eat
-	eliminate actor
-	eliminate vermin
-	enable
-	encourage
-	engage
-	enhance
-	ensure
-	enter
-	entertain
-	entertain actor (CHA)
-	escape actor
-	escape chase
-	escape crime scene
-	escape imprisonment
-	escape location
-	escape surround
-	escort actor
-	escort item
-	establish
-	estimate
-	estimate age (WIS)
-	estimate height (WIS)
-	estimate odds (WIS)
-	estimate weight (WIS)
-	euthanize animal
-	euthanize character
-	euthanize monster
-	evade actor
-	evade assassin
-	evade attacker
-	examine
-	expand
-	expect
-	explain
-	explore
-	extend
-	extract actor
-	extract information
-	fall
-	fall safely (DEX)
-	feed
-	feel
-	fight
-	find
-	find direction (WIS)
-	find escaped actor
-	find hidden actor
-	find hidden location
-	find hidden object
-	find lost item
-	find out truth
-	finish
-	fit
-	fly
-	fold
-	follow
-	forbid
-	force open container (STR)
-	force open door (STR)
-	forge
-	forge document (INT)
-	forgive
-	frame actor
-	free
-	free hostage
-	free stuck actor (STR)
-	freeze
-	generate
-	get
-	give
-	go
-	grow
-	handle
-	handle animal (CHA)
-	hang
-	have
-	hear
-	hesitate
-	hide
-	hide (DEX)
-	hide in container (DEX)
-	hide in nature (DEX)
-	hide in shadow (DEX)
-	hit
-	hold
-	hold actor (STR)
-	hold breath (CON)
-	hold closing entrance (STR)
-	hold deadfall (STR)
-	hold door (STR)
-	hold gate (STR)
-	hold hazard (STR)
-	hold hazard (STR)
-	hold onto ceiling (DEX)
-	hold onto ledge (DEX)
-	hold trap (STR)
-	hurry
-	hurt
-	identify
-	identify object (INT)
-	ignore
-	illustrate
-	impress
-	improve
-	include
-	infiltrate group
-	inform
-	insist
-	intercept actor
-	intimidate
-	intimidate actor (CHA)
-	introduce
-	invest
-	investigate
-	investigate actor
-	investigate crime
-	investigate crime scene
-	investigate item
-	investigate location
-	involve
-	jump
-	jump /f height (DEX)
-	jump /o chasm (STR / DEX)
-	jump /o obstacle (STR / DEX)
-	jump /o trap (STR / DEX)
-	jump far (STR / DEX)
-	jump high (STR / DEX)
-	jump on pole (DEX)
-	jump to ledge (STR / DEX)
-	keep
-	kick
-	kill
-	kill silently (DEX)
-	kneel
-	know
-	know fact (INT)
-	laugh
-	lay
-	lead
-	lean
-	leap
-	learn
-	leave
-	lend
-	let
-	lie
-	lie to actor(CHA)
-	lift
-	lift grate (STR)
-	lift object (STR)
-	lift portcullis (STR)
-	light
-	listen
-	listen (WIS)
-	load
-	load / unload (STR)
-	look
-	lose
-	maintain
-	make
-	make cure (INT)
-	make poison (INT)
-	manage
-	manufacture
-	manufacture item (DEX)
-	measure
-	meet
-	melt
-	mention
-	miss
-	mix
-	motivate
-	motivate actor (CHA)
-	move
-	move heavy object (STR)
-	move material (STR)
-	move silently (DEX)
-	neglect
-	negotiate
-	negotiate hostage situation
-	negotiate trade
-	negotiate with actor
-	notice theft (DEX)
-	observe
-	obtain
-	offer
-	open
-	open container
-	open entrance
-	operate
-	operate mechanism
-	operate mechanism (STR)
-	oppose
-	oppose extortion
-	oppose intimidation
-	order
-	organize
-	overcome
-	overcome disease (CON)
-	overcome illness (CON)
-	overtake
-	overthrow
-	overthrow actor (STR)
-	own
-	pacify
-	pacify actor (STR)
-	participate
-	pass
-	pass actor
-	pass guards
-	pass narrow passage (DEX)
-	pass obstacle
-	pass razorvine (DEX)
-	pass trap
-	pay
-	perform
-	persuade
-	persuade actor
-	persuade actor (CHA)
-	pick
-	pick lock (DEX)
-	plan
-	plan assassination
-	plan elimination
-	plan escape
-	plan extraction
-	plan murder
-	plan robbery
-	plan robbery
-	plan sabotage
-	plan theft
-	play
-	point
-	postpone
-	pour
-	practice
-	prepare
-	pretend
-	prevent
-	proceed
-	produce
-	produce potion (INT)
-	produce product (INT)
-	produce scroll (INT)
-	promise
-	propose
-	protect
-	prove
-	pull
-	pull
-	pull heavy chain (STR)
-	punch
-	pursue
-	push
-	put
-	qualify
-	quit
-	rappell down (DEX)
-	react
-	react to ambush (DEX)
-	react to theft (DEX)
-	read
-	read language (INT)
-	read lips (WIS)
-	receive
-	recommend
-	reduce
-	refer
-	refuse
-	relax
-	rely
-	remain
-	remember
-	remember info (INT)
-	remember speech (INT)
-	remember text (INT)
-	remind
-	repair
-	replace
-	represent
-	require
-	resent
-	resist
-	retire
-	rid
-	ride
-	rise
-	risk
-	run
-	run (STR)
-	run to escape (STR)
-	run to intercept (STR)
-	run to reach (STR)
-	sabotage equipment
-	sabotage mission
-	sabotage structure
-	sanction
-	satisfy
-	say
-	see
-	sell
-	send
-	sense
-	sense truth (WIS)
-	sense weather (WIS)
-	serve
-	set
-	settle
-	settle debt
-	settle dispute
-	shake
-	shed
-	shoot
-	show
-	shut
-	sing
-	sink
-	sit
-	sleep
-	slice
-	slide
-	slight of hand (DEX)
-	slip
-	smell
-	snore
-	solve
-	sow
-	speak
-	speak language (INT)
-	spell
-	spend
-	spill
-	spit
-	spot
-	spot ambush (WIS)
-	spot hazard (WIS)
-	spot trap (WIS)
-	spread
-	stack
-	stand
-	steal
-	steal art
-	steal goods
-	steal items
-	steal object
-	stick
-	stir
-	stop
-	strike
-	struggle
-	study
-	stunt-ride (DEX)
-	submit
-	submit to extortionist
-	submit to intimidation
-	submit to intimidator
-	submit to robbery
-	submit to terror
-	substitute /w fake
-	substitute artefact
-	substitute item
-	substitute poison
-	substitute scroll
-	substitute spell
-	subtract item
-	suffer
-	suggest
-	sumbit to extortion
-	supply
-	surprise
-	survive
-	swear
-	swim
-	swim (STR)
-	swim /o stream (STR)
-	swim deep (STR)
-	swing
-	swing on rope (DEX)
-	take
-	talk
-	tame
-	tame animal (CHA)
-	taste
-	teach
-	tear
-	tell
-	tend
-	threaten
-	throw
-	throw object far (STR)
-	throw to trigger mechanism
-	throw to trigger trap
-	thrust
-	thrust person (STR)
-	tolerate
-	torture actor
-	track
-	track actor
-	track animal
-	track escaping actor (WIS)
-	translate
-	translate speech (INT)
-	translate text (INT)
-	transport actor
-	transport item
-	trigger
-	trigger trap
-	try
-	turn
-	turn heavy wheel (STR)
-	unblock
-	unblock entrance
-	understand
-	unload
-	use artefact
-	use potion
-	use scroll
-	vindicate actor
-	vindicate self
-	volunteer
-	wait
-	wake
-	walk
-	walk catwalk (DEX)
-	walk ledge (DEX)
-	walk narrow bridge (DEX)
-	walk tightrope (DEX)
-	warn
-	wash
-	watch
-	wave
-	wear
-	weigh
-	whip
-	win
-	win competition
-	wish
-	withstand
-	withstand charge (STR)
-	withstand disease (CON)
-	withstand smell (CON)
-	withstand taste (CON)
-	withstand temperature (CON)
-	withstand weather (CON)
-	write
-	write language (INT)
+	A
+		accept
+		accuse
+		acquire
+		act
+		admit
+		advise
+		agree
+		aim
+		allow
+		anticipate
+		apologize
+		appear
+		apply
+		appreciate
+		approach
+		approve
+		argue
+		arrange
+		arrive
+		ask
+		assure
+		astonish
+		attach
+		attack
+		attempt
+		attend
+		attract
+		avoid
+		awake
+	B
+		bake
+		bear
+		beat
+		become
+		believe
+		bend
+		bet
+		betray
+		bind
+		bite
+		blend
+		block
+		borrow
+		bow
+		brake
+		break
+		breed
+		bring
+		build
+		burn
+		buy
+	C
+		care
+		carry
+		catch
+		cause
+		change
+		charge
+		chase
+		cheat
+		choose
+		chop
+		claim
+		clear
+		climb
+		come
+		command
+		commit
+		communicate
+		compare
+		compete
+		complete
+		concentrate
+		confirm
+		consent
+		construct
+		consult
+		contain
+		continue
+		convince
+		cook
+		cover
+		crawl
+		create
+		creep
+		criticize
+		cross
+		cure
+		cut
+	D
+		damage
+		dance
+		deal
+		decide
+		defend
+		defer
+		delay
+		deliver
+		demand
+		deny
+		derail
+		design
+		destroy
+		determine
+		develop
+		disagree
+		disappear
+		disarm
+		discover
+		discuss
+		disguise
+		dislike
+		disrupt
+		distribute
+		dive
+		do
+		dodge
+		doubt
+		drag
+		drink
+		drive
+		drop
+		dry
+	E
+		eat
+		eliminate
+		enable
+		encourage
+		engage
+		enhance
+		ensure
+		enter
+		entertain
+		escape
+		escort
+		establish
+		estimate
+		euthanize
+		evade
+		examine
+		expand
+		expect
+		explain
+		explore
+		extend
+		extract
+	F
+		fall
+		feed
+		feel
+		fight
+		find
+		finish
+		fit
+		fly
+		fold
+		follow
+		forbid
+		force
+		forge
+		forgive
+		frame
+		free
+		freeze
+	G
+		generate
+		get
+		give
+		go
+		grow
+	H
+		handle
+		hang
+		have
+		hear
+		hesitate
+		hide
+		hit
+		hold
+		hurry
+		hurt
+	I
+		identify
+		ignore
+		illustrate
+		impress
+		improve
+		include
+		infiltrate
+		inform
+		insist
+		intercept
+		intimidate
+		introduce
+		invest
+		investigate
+		involve
+	J
+		jump
+	K
+		keep
+		kick
+		kill
+		kneel
+		know
+	L
+		lay
+		lead
+		lean
+		leap
+		learn
+		leave
+		lend
+		let
+		lie
+		lift
+		light
+		listen
+		load
+		look
+		lose
+	M
+		maintain
+		make
+		manage
+		manufacture
+		measure
+		meet
+		melt
+		mention
+		miss
+		mix
+		motivate
+		move
+	N
+		neglect
+		negotiate
+		notice
+	O
+		observe
+		obtain
+		offer
+		open
+		operate
+		oppose
+		order
+		organize
+		overcome
+		overtake
+		overthrow
+		own
+	P
+		pacify
+		participate
+		pass
+		pay
+		perform
+		persuade
+		pick
+		plan
+		play
+		point
+		postpone
+		pour
+		practice
+		prepare
+		pretend
+		prevent
+		proceed
+		produce
+		promise
+		propose
+		protect
+		prove
+		pull
+		punch
+		pursue
+		push
+		put
+	Q
+		qualify
+		quit
+	R
+		rappel
+		react
+		read
+		receive
+		recommend
+		reduce
+		refer
+		refuse
+		relax
+		rely
+		remain
+		remember
+		remind
+		repair
+		replace
+		represent
+		require
+		resent
+		resist
+		retire
+		rid
+		ride
+		rise
+		risk
+		run
+	S
+		sabotage
+		sanction
+		satisfy
+		say
+		see
+		sell
+		send
+		sense
+		serve
+		set
+		settle
+		shake
+		shed
+		shoot
+		show
+		shut
+		sing
+		sink
+		sit
+		sleep
+		slice
+		slide
+		slight
+		slip
+		smell
+		snore
+		solve
+		sow
+		speak
+		spell
+		spend
+		spill
+		spit
+		spot
+		spread
+		stack
+		stand
+		steal
+		stick
+		stir
+		stop
+		strike
+		struggle
+		study
+		stunt-ride
+		submit
+		substitute
+		subtract
+		suffer
+		suggest
+		sumbit
+		supply
+		surprise
+		survive
+		swear
+		swim
+		swing
+	T
+		take
+		talk
+		tame
+		taste
+		teach
+		tear
+		tell
+		tend
+		threaten
+		throw
+		thrust
+		tolerate
+		torture
+		track
+		translate
+		transport
+		trigger
+		try
+		turn
+	U
+		unblock
+		understand
+		unload
+		use
+	V
+		vindicate
+		volunteer
+	W
+		wait
+		wake
+		walk
+		warn
+		wash
+		watch
+		wave
+		wear
+		weigh
+		whip
+		win
+		wish
+		withstand
+		write
