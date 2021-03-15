@@ -1,0 +1,20 @@
+Ability
+Access
+Ally
+Ally Recovery
+Altruism
+Justice
+Equipment
+Information
+Fame
+Influence
+Rank
+Title
+Spell
+Business
+Contract
+Gold
+Goods
+Land
+Property
+Trade	

@@ -1,5 +1,5 @@
 
-*Character : Alignment : Race : Profession : Clothes : Equipment : Jewelry : Skill : Character Trait
+*Character : Character Type : Profession : Clothes : Equipment : Jewelry : Alignment : Skill : Character Trait
 	
 *Encounter : Motivation : Action : Actor : Object : Encounter Set : Encounter Set Detail : Special Encounter Feature
 
@@ -36,14 +36,18 @@ Alignment
 	Neutral Evil
 	Chaotic Evil
 
-Race
-	Animal > Animal
-	*Common Race > Common Race
-	God : Animal : Common Race : Monster
+Character Type
+	*Creature Race > Creature Race
+	God > Creature Race
 	Intelligent Animal > Animal
-	Monster > Monster
+	*Monster > Monster
 	Nature
 	Sentient Artifact : Object
+
+Creature Race
+	*Animal > Animal
+	*Common Race > Common Race
+	*Monster > Monster
 
 Monster
 	Demon
@@ -101,10 +105,10 @@ Art
 	Engraved Weapon
 		*Melee > Melee Weapon
 		*Ranged > Ranged Weapon
-	Figurine > Race
-	Mask > Race
+	Figurine > Creature Race
+	Mask > Creature Race
 	Painting
-	Statue > Race
+	Statue > Creature Race
 	
 Jewelry : Gemstone : Object Feature
 	Amulet
@@ -299,12 +303,12 @@ Magical
 		Electrifying
 		Acidic
 	Enchanted > Enchantment
-	Polymorphing > Race
+	Polymorphing > Creature Race
 	Spell > Spell
 	Triggered
 		Bloodline
 		Last Living Master
-		Race > Race
+		Race > Creature Race
 		Sacrifice
 	
 Material
@@ -983,7 +987,7 @@ Lighting
 
 Sound
 	Approaching Horses
-	Being > Race
+	Creature > Creature Race
 	Building > Building
 	Celebration
 	Conversation
@@ -1592,6 +1596,7 @@ Threat
 		Ambush
 		Assassination
 		Assault
+		Attack
 		Bounty Hunting
 		Dueling
 		Invasion
@@ -1603,10 +1608,9 @@ Threat
 		Suffocation
 	Disease / Illness
 	Disinformation
-	Environmental Threat
-		Animals
-		Temperature
-		Weather
+	*Environmental Threat
+		Dangerous Temperature
+		Dangerous Weather
 	Extortion
 	Fraud
 		Broken Promise
@@ -1620,7 +1624,7 @@ Threat
 		Godhood
 		Life Extension
 		Youth
-	Imprisonment / Persecution
+	Imprisonment
 	Magical Object Threat : Spell
 	Opportunity Loss
 	*Performance Loss
@@ -1628,6 +1632,7 @@ Threat
 		Magical Ability Loss
 		Physical Ability Loss : Basic Statistic
 		Skill Performance Loss
+	Persecution
 	Stalking
 	Seduction
 	Sense Loss
@@ -1645,37 +1650,50 @@ Threat
 		Property Arson
 		Property Seizing
 
-Actor : Race : Profession : Clothes : Equipment : Jewelry : Skill : Character Trait : Character State
-	Citizen
-	Clan > Profession
-	Commoner
-	Crowd
-	Cult
-	Family
-	Friend
-	Guardian
-	Guild > Profession
-	Knight Order
-	Magical Circle
-	Monster > Monster
-	Noble
-	Order > Profession
-	Party > Profession
-	Player
-	Relative
-		Aunt
-		Brother
-		Cousin
-		Father
-		Husband
-		Mother
-		Sister
-		Uncle
-		Wife
-	Religious Order
-	Scholar
-	Villager
-	Worshiper
+Actor : Clothes : Equipment : Jewelry
+	*Group : Character State
+		Animal Pack > Animal
+		Citizens : Common Race
+		Commoners : Common Race
+		Crowd : Common Race
+		Cult : Common Race
+		Family
+		Monster Band > Monster
+		Nobles : Common Race
+		Players
+		Villagers : Common Race
+		Worshipers : Common Race
+	*Individual : Character Trait : Character State
+		Animal > Animal
+		Commoner : Common Race
+		Friend
+		Guardian
+		*Monster > Monster
+		*Noble > Noble
+		Player
+		*Relative
+			Aunt
+			Brother
+			Cousin
+			Father
+			Husband
+			Mother
+			Sister
+			Uncle
+			Wife
+		Scholar : Common Race : Profession
+		Villager : Common Race
+		Worshiper : Common Race
+	*Organization
+		Clan > Profession : Common Race
+		Guild > Profession : Common Race
+		Knight Order
+		Magical Circle : Common Race
+		Order > Profession : Common Race
+		Party > Profession
+		Priest Order
+		Religious Order : Common Race
+
 
 Object : Object Feature
 	Art > Art
@@ -1704,6 +1722,7 @@ Hints
 		Wrong Map Layout
 	Suspicius Smell > Smell
 	Suspicius Sound > Sound
+	Temperature Change
 	Weather Change
 	
 Villain's motive
