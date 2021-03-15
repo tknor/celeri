@@ -292,6 +292,7 @@ Natural Structure
 	Waterfall
 
 Magical
+	Spends Someone's Life
 	*Elemental
 		Burning
 		Freezing
@@ -300,8 +301,11 @@ Magical
 	Enchanted > Enchantment
 	Polymorphing > Race
 	Spell > Spell
-	*Trigger
-		Bloodline triggered
+	Triggered
+		Bloodline
+		Last Living Master
+		Race > Race
+		Sacrifice
 	
 Material
 	Adamantite
@@ -557,6 +561,7 @@ Other Equipment : Object Feature
 		Whistle
 	Horse
 	Pet : Animal
+	Ship
 	*Uncommon
 		Poison Flask
 		Potion : Spell
@@ -567,13 +572,13 @@ Other Equipment : Object Feature
 		Wand : Spell
 
 Equipment : Object Feature
-	Armor > Armor
+	*Armor > Armor
 	Clothing > Clothing
-	Helmet > Helmet
-	Melee Weapon > Melee Weapon
-	Other Equipment > Other Equipment
-	Ranged Weapon > Ranged Weapon
-	Shield > Shield
+	*Helmet > Helmet
+	*Melee Weapon > Melee Weapon
+	*Other Equipment > Other Equipment
+	*Ranged Weapon > Ranged Weapon
+	*Shield > Shield
 
 Armor : Object Feature
 	Leather Armor (1)
@@ -892,54 +897,8 @@ Depth
 	Neck Deep
 
 Terrain
-	*General
-		Blood > Depth
-		Grass
-		Grass, High
-		Frozen Snow
-		Gravel
-		Brush, Heavy
-		Marble
-		Ice
-		Mossed Stone
-		Mud > Depth
-		Pebbles
-		Rocks
-		River > Depth : Cleanliness : Liquid
-		Sand
-		Snow > Depth : Cleanliness : Liquid
-		Stone
-		Stream
-		Submerged : Cleanliness : Liquid
-		Water > Depth
-	*Specific
-		Bog
-		*Bridge > Bridge
-		Clay
-		Dirt
-		*Forest
-			Forest
-			Forest, Dense
-			Forest, Damaged
-			Forest, Dying
-			Coniferous Forest
-			Coniferous Forest, Dense
-			Deciduous Forest
-			Deciduous Forest, Dense
-			Massive Ancient Forest
-		Jungle
-		Moor
-		*Road
-			Dirt Trail
-			Forest Trail
-			Mud Trail
-			Paved Road
-			Rock Trail
-		Swamp / Marsh
-		Tiles
-		Trail
-		Undergrowth
-		Undergrowth, Heavy
+	*General Terrain > General Terrain
+	*Specific Terrain > Specific Terrain
 	*Property
 		Angled
 		Falling Danger
@@ -949,6 +908,56 @@ Terrain
 		Slippery
 			Liquid > Liquid
 		Steep
+		Unstable
+
+General Terrain
+	Blood > Depth
+	Grass
+	Grass, High
+	Frozen Snow
+	Gravel
+	Brush, Heavy
+	Marble
+	Ice
+	Mossed Stone
+	Mud > Depth
+	Pebbles
+	Rocks
+	River > Depth : Cleanliness : Liquid
+	Sand
+	Snow > Depth : Cleanliness : Liquid
+	Stone
+	Stream
+	Submerged : Cleanliness : Liquid
+	Tiles
+	Undergrowth
+	Undergrowth, Heavy
+	Water > Depth
+		
+Specific Terrain
+	Bog
+	*Bridge > Bridge
+	Clay
+	Dirt
+	*Forest
+		Forest
+		Forest, Dense
+		Forest, Damaged
+		Forest, Dying
+		Coniferous Forest
+		Coniferous Forest, Dense
+		Deciduous Forest
+		Deciduous Forest, Dense
+		Massive Ancient Forest
+	Jungle
+	Moor
+	*Road
+		Dirt Trail
+		Forest Trail
+		Mud Trail
+		Paved Road
+		Rock Trail
+	Swamp / Marsh
 
 Bridge : Cleanliness : Sturdiness : Damage
 	Single-Log Bridge
@@ -973,20 +982,22 @@ Lighting
 	Torches
 
 Sound
-	Animal > Animal
+	Approaching Horses
+	Being > Race
 	Building > Building
 	Celebration
 	Conversation
 	Laugh
 	Machine
 	March
-	Movement on > Terrain
+	Movement on > General Terrain
 	Moving Armor
 	*Natural Structure > Natural Structure
 	Playing Instrument
 	Scream
 	Singing
 	Torture
+	Work
 
 Smell
 	Ash
@@ -1071,10 +1082,11 @@ Daytime
 Spell
 	*Generic
 		Alteration
+			Cryokinesis
+			Petrification
+			Pyrokinesis
 			Telekinesis
 			Transformation
-			Pyrokinesis
-			Cryokinesis
 		Conjuration
 			Animal
 			Demon
@@ -1095,6 +1107,7 @@ Spell
 			Lightning Bolt
 			Lightning Trap
 		Divination
+			Teleportation
 		Enchantment
 		Illusion
 			Blur
@@ -1106,10 +1119,12 @@ Spell
 			Cure Disease / Illness
 			Lift Curse
 			Raise Dead
+			Remove Petrification
 		Stats Increase : Statistic
 		Stats Decrease : Statistic
 		Stats Recovery : Statistic
-		Teleportation
+	Curse
+		Stats Decrease : Statistic
 
 Enchantment
 	+1
@@ -1124,7 +1139,7 @@ Enchantment
 	-5
 
 Trap Mechanism
-	Detector
+	Detector (magic)
 	Floor
 	String
 	Touch
@@ -1137,7 +1152,7 @@ Trap : Trap Mechanism
 		Spikes
 	Cave-in
 	Closing Door
-	Contact
+	Contact Damage
 		Fire Burn
 		Cold Burn
 		Shock
@@ -1190,7 +1205,8 @@ Trap : Trap Mechanism
 	Snare
 		Anchored / Cutting
 		Pulling
-	Spectral Tendrils
+	Spell Trap > Spell
+	Spider Web
 	Strangling Vine
 	Trap Door, Locking
 		Height
@@ -1537,6 +1553,10 @@ Reward
 	Ally Recovery
 	Altruism / Justice
 	Equipment : Equipment
+	Immortality
+		Godhood
+		Life Extension
+		Youth
 	Information
 	Recovery
 		Combat Performance
@@ -1549,23 +1569,25 @@ Reward
 		Satiating Hunger / Thirst
 		Skill Performance
 	Skill : Skill
+	Social Status
+		Fame
+		Influence
+		Rank
+		Title
 	Spell : Spell
-	Title / Rank / Influence
 	Wealth
 		Business
 		Contract
 		Gold
 		Goods
+		Land
 		Property
 		Trade
 	
 Threat
 	Access Loss
 	Ally Alienation
-	Ally Imprisonment
-	Ally Kidnapping
-	Ally Extortion
-	Ally Harm
+	Ally Threat : Threat
 	Attack / Murder
 		Ambush
 		Assassination
@@ -1573,13 +1595,18 @@ Threat
 		Bounty Hunting
 		Dueling
 		Invasion
+		Kidnapping
 		Poisoning
 		Robbery
 		Stabbing
 		Strangulation
 		Suffocation
 	Disease / Illness
-	Disinformation	
+	Disinformation
+	Environmental Threat
+		Animals
+		Temperature
+		Weather
 	Extortion
 	Fraud
 		Broken Promise
@@ -1587,14 +1614,14 @@ Threat
 		Counterfeiting
 		Impersonation
 		Lying
-	Group Expulsion
 	Hunger / Thirst
+	Illusion
+	Immortality Loss
+		Godhood
+		Life Extension
+		Youth
 	Imprisonment / Persecution
-	Magical Threat
-		Curse
-		Illusions
-		Mind Control
-		Petrification
+	Magical Object Threat : Spell
 	Opportunity Loss
 	*Performance Loss
 		Combat Performance Loss : Combat Statistic
@@ -1604,12 +1631,17 @@ Threat
 	Stalking
 	Seduction
 	Sense Loss
+	Social Status Loss
+		Group Expulsion
+		Influence
+		Rank
+		Title
 	Theft
-	Title / Rank / Influence Loss
 	Trap
 	Wealth Loss
 		Gold Seizing
 		Goods Seizing
+		Land Seizing
 		Property Arson
 		Property Seizing
 
@@ -1660,13 +1692,23 @@ Object : Object Feature
 	
 Hints
 	Cloud Approaching
+	Lighting Changes
+	Misplaced Object
 	Near Air Flow
+	Previous Fight Clues
 	Rising Dust at Distance
+	Stains > Liquid
+	Structural Hints
+		Different Tile Height
+		Different Tile Color
+		Wrong Map Layout
+	Suspicius Smell > Smell
+	Suspicius Sound > Sound
 	Weather Change
 	
 Villain's motive
 	Immortality
-		Become god
+		Become God
 		Become immortal
 		Become younger
 		Prolong life
@@ -1680,7 +1722,7 @@ Villain's motive
 		Carry out deity's wishes
 		Construct magical device
 		Contact lost deity
-		Obtain an artifact
+		Obtain magical artifact
 		Offer sacrifices to deity
 		Open gate to another world
 	Mayhem
@@ -1689,12 +1731,12 @@ Villain's motive
 		Overthrow government
 		Spread contagion
 		Trigger natural disaster
-		Utterly destroy bloodline or clan
+		Utterly destroy bloodline or group
 	Passion
 		Prolong life of loved one
 		Prove worthy of another person's love
-		Raise dead loved one
-		Recover loved one
+		Raise loved one from death
+		Recover or free loved one
 	Power
 		Conquer region
 		Incite rebellion
@@ -1708,7 +1750,7 @@ Villain's motive
 		Control natural resource or trade
 		Marry into wealth
 		Plunder ancient ruins
-		Steal land, property, goods, money
+		Steal land, property, goods or gold
 	
 Villain's method
 	Agricultural Devastation

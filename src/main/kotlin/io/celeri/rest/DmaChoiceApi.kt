@@ -17,7 +17,7 @@ class DmaChoiceApi(private val choices: Choices) {
 
     @GetMapping("/creation-choices")
     fun creationChoices(): ChoicesDto {
-        return ChoicesDto(choices.creationChoices().map { ChoiceDto(it.label, it.isDisplayed()) })
+        return ChoicesDto(choices.creationChoices().map { ChoiceDto(it.label, it.isDisplayed(), it.getChildren().isNotEmpty()) })
     }
 
     @PostMapping("/children-of")
@@ -26,13 +26,13 @@ class DmaChoiceApi(private val choices: Choices) {
         // TODO error handling, null checks on dto, or something
 
         val labels = selections.choices.map { it.label }
-        return ChoicesDto(choices.childrenOf(labels).map { ChoiceDto(it.label, it.isDisplayed()) })
+        return ChoicesDto(choices.childrenOf(labels).map { ChoiceDto(it.label, it.isDisplayed(), it.getChildren().isNotEmpty()) })
     }
 
     @PostMapping("/properties-of")
     fun propertiesOf(@RequestBody selections: ChoicesDto): ChoicesDto {
 
         val labels = selections.choices.map { it.label }
-        return ChoicesDto(choices.possiblePropertiesOf(labels).map { ChoiceDto(it.label, it.isDisplayed()) })
+        return ChoicesDto(choices.possiblePropertiesOf(labels).map { ChoiceDto(it.label, it.isDisplayed(), it.getChildren().isNotEmpty()) })
     }
 }
