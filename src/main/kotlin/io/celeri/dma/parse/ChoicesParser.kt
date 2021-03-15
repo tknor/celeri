@@ -13,7 +13,7 @@ class ChoicesParser(private val filePath: String) { // TODO change from String t
 
     fun parse(): List<TopChoice> {
 
-        topChoices = ArrayList()
+        topChoices.clear()
         val parsedLines: ArrayList<ParsedLine> = ArrayList()
 
         val lines: List<String> = FileInputStream(filePath).bufferedReader().use { it.readLines() }
